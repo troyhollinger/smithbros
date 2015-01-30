@@ -28,7 +28,7 @@
         @if (strpos(Route::currentRouteName(), 'pacific') !== false)
         <a href="{{ route('pacific.home') }}"><img class="logo" src="{{ asset('img/pacific-logo.png') }}"></a>
         @else
-        <a href="{{ route('home') }}"><img class="logo" src="{{ asset('img/temp-logo.png') }}"></a>
+        <a href="{{ route('home') }}"><img class="logo" src="{{ asset('img/script-logo.png') }}"></a>
         @endif
 
         @include ('partials.nav') 

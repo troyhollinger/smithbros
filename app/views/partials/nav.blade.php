@@ -5,8 +5,8 @@
 		<nav>
 			<ul>
 				@if (strpos(Route::currentRouteName(), 'pacific') !== false)
-				<a href=""><li {{ Request::is('/') ? 'class="lighter"' : '' }} data-hover="1945 to Now">Overview</li></a>
-				<a href=""><li {{ Request::is('capabilities') ? 'class="lighter"' : '' }} data-hover="Capabilities">Catalog</li></a>
+				<a href=""><li {{ Request::is('/') ? 'class="lighter"' : '' }} data-hover="Overview">Overview</li></a>
+				<a href=""><li {{ Request::is('capabilities') ? 'class="lighter"' : '' }} data-hover="Catalog">Catalog</li></a>
 				<a href="#contact"><li {{ Request::is('contact') ? 'class="lighter"' : '' }} data-hover="Contact">Contact</li></a>
 				<a href="{{ route('home') }}"><li {{ Request::is('pacific') ? 'class="lighter"' : '' }} data-hover="Smith Bros MFG">Smith Bros MFG</li></a>
 				<a href=""><li {{ Request::is('vendors') || Request::is('quote') ? 'class="lighter"' : '' }} data-hover="Vendors">Vendors</li></a>
