@@ -68,6 +68,9 @@ $gotham : 'Gotham-Book', 'Montserrat', 'Helvetica', Arial;
 	@else if $point == medium {
     	@media (max-width: 1250px) { @content; }
 	}
+	@else if $point == large {
+    	@media (max-width: 1600px) { @content; }
+	}
 	@else {
 		@media (max-width: $point) { @content; }
 	}
@@ -84,6 +87,12 @@ $gotham : 'Gotham-Book', 'Montserrat', 'Helvetica', Arial;
 
 }
 
+.bold {
+
+	font-weight: bold;
+
+}
+
 html {
 
 	background-color: $dark;
@@ -95,15 +104,16 @@ html {
 
 .logo {
 
-	// position: fixed;
-	// left:10%;
-	// top:4%;
-	
-
 	position: absolute;
 	left:10%;
 	z-index: 10;
 	width:160px;
+
+	@include breakpoint(large) {
+
+		width:120px;
+
+	}
 
 }
 
@@ -127,7 +137,8 @@ html {
 	@include transition(all .25s ease);
 
 	.container {
-		padding-top: 50px;
+		// padding-top: 50px;
+		padding-top: 5.5vh;
 		// @include transition(all .25s ease);
 
 	}
@@ -150,6 +161,8 @@ html {
 }
 
 nav {
+
+	float:left;
 
 	li {
 
@@ -185,6 +198,11 @@ nav {
 
 		}
 
+		@include breakpoint(large) {
+
+			font-size: .9rem;
+
+		}
 	
 	}
 
@@ -374,6 +392,12 @@ nav {
 	@extend .photo-caption;
 	width:40%;
 
+	@include breakpoint(large) {
+
+		width:50%;
+
+	}
+
 }
 
 .machine-photo-diagram {
@@ -417,6 +441,13 @@ nav {
 	width:100%;
 	width:100vw;
 	background-color: #e7e9ea;
+
+	& > .container {
+
+		@include center;
+		top:48%;
+
+	}
 	
 }
 
@@ -462,8 +493,6 @@ nav {
 
 }
 
-
-
 .parts-images-container {
 
 	width:100%;
@@ -479,6 +508,17 @@ nav {
 	padding-right: 15px;
 	float:left;
 
+	&:nth-child(2) {
+
+		// top:200px;
+
+	}
+
+	&:nth-child(3) {
+
+		// top:60px;
+
+	}
 
 }
 
@@ -503,24 +543,114 @@ nav {
 
 }
 
-	
 .parts-image {
 
-	// @include center;
-	position: relative;
-	// @include centerVertical;
+	position: relative;	
 	z-index: 1;
 	width:100%;
 	@include transition(all 1s ease-out);
 	@include transform-origin(center center);
-
+	@include backface-visibility(hidden);
 
 	&:hover {
 
-		// @include transform(translateZ(500px));
-
 		@include transform(scale(1.2));
 		@include transition(all 3s ease-out);
+
+	}
+
+}
+
+
+
+
+.vendor-container {
+
+	@extend .photo-container;
+
+	.container {
+
+		@include box-sizing(border-box);
+		padding-top: 12%;
+		padding-top: 12vh;
+
+	}
+
+}
+
+.vendor-info {
+
+	width:30%;
+	color:white;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	float:left;
+
+
+	
+}
+
+
+.button {
+
+	width:220px;
+	height:55px;
+	background-color: white;
+	color:$dark;
+	font-size: .9rem;
+	line-height: 3.5rem;
+	text-align: center;
+	border: none;
+	text-transform: uppercase;
+
+}
+
+.form {
+
+	input[type="text"], input[type="password"], input[type="tel"], textarea {
+
+		width:100%;
+		background-color:transparent;
+		border:none;
+		border-bottom: 1px solid white;
+		color:white;
+
+		&:focus {
+
+			outline:none;
+
+
+		}
+
+
+	}
+
+	label {
+		// margin-top: 10px;
+		color:white;
+		text-transform: uppercase;
+		font-size: .8rem;
+
+	}
+
+}
+
+.vendor-login-form {
+
+	@extend .form;
+
+	float:right;
+	width:25%;
+
+	.sign-in-button {
+
+		text-align: right;
+
+	}
+
+	input[type="submit"] {
+
+		margin-top: 60px;
 
 
 	}
@@ -528,16 +658,202 @@ nav {
 
 }
 
+.quote-form {
+
+	@extend .form;
+
+	margin:0 auto;
+	width:25%;
+
+	textarea {
+		margin-top: 1rem;
+		height:5rem;
+
+	}
+
+	p {
+
+		margin-bottom: 15px;
+
+	} 
+
+}
+
+.quote-form-actions {
+	width:100%;
+	margin-top: 50px;
+	position: relative;
+
+}
+
+.quote-form-action {
+
+	width:50%;
+	@include box-sizing(border-box);
+
+	&.cancel {
+
+		float:left;
+		background-color: transparent;
+		border:1px solid white;
+		color:white;
+
+	}
+
+	&.request {
+
+		float:right;
+
+	}
+
+}
+
+.team-container {
+
+	position: relative;
+	width:100%;
+	height:auto;
+
+	img {
+
+		display: block;
+		width:100%;
+
+	}
+
+}
+
+
+
+.team-hover-trigger-container {
+
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	overflow: auto;
+
+}
+
+.team-hover-trigger {
+
+	float:left;
+	height:100%;
+	width:8.333%;
+	@include box-sizing(border-box);
+	// border-right: 2px solid green;
+
+	&:first-child {
+
+		width:13%;
+
+	}
+
+	&:nth-child(2) {
+
+		width:7%;
+
+	}
+
+	&:nth-child(3) {
+
+		width:7%;
+
+	}
+
+	&:nth-child(4) {
+
+		width:7%;
+
+	}
+
+	&:nth-child(7) {
+
+		width:6%;
+
+	}
+
+	&:nth-child(8) {
+
+		width:7%;
+
+	}
+
+}
+
+
+.nav-page-elements {
+
+	float:right;
+
+}
+
+.hamburger {
+
+	cursor:pointer;
+	position: relative;
+
+	.patty {
+		width:100%;
+		height:2px;
+		background-color: black;
+		border-radius: 500px;
+		@include transition(all .15s ease);
+
+		&:first-child {
+			position: absolute;
+			top:0;
+			left:0;
+		}
+
+		&:nth-child(2) {
+			@include center;
+		}
+
+		&:last-child {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+
+	}	
+
+
+}
+
+.capabilities-title {
+
+	text-transform: uppercase;
+
+	.hamburger {
+
+		float:left;
+		width:18px;
+		height:.8rem;
+
+	}
+
+	h3 {
+
+		margin-left: 10px;
+		float:left;
+		white-space: nowrap;
+
+	}
+
+
+
+}
 
 
 
 
+.pacific-overview-container {
 
+	@extend .photo-container;
 
-
-
-
-
+}
 
 
 

@@ -1,7 +1,6 @@
 <?php
 
 
-
 Route::get('/', ['as' => 'home', function() {
 
 	return View::make('pages.home');
@@ -20,9 +19,9 @@ Route::get('contact', ['as' => 'contact', function() {
 
 }]);
 
-Route::get('pacific', ['as' => 'pacific', function() {
+Route::get('pacific', ['as' => 'pacific.home', function() {
 
-	return View::make('pages.pacific');
+	return View::make('pacific.home');
 
 }]);
 
@@ -30,5 +29,12 @@ Route::get('pacific', ['as' => 'pacific', function() {
 Route::get('vendors', ['as' => 'vendors', function() {
 
 	return View::make('pages.vendors');
+
+}]);
+
+
+Route::get('quote', ['as' => 'quote', function() {
+
+	return View::make('pages.quote');
 
 }]);

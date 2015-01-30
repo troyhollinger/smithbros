@@ -1,3 +1,19 @@
+'use strict';
+
+// Smooth scrolling to anchor tag
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+
 var requestAnimationFrame = window.requestAnimationFrame || 
                             window.mozRequestAnimationFrame || 
                             window.webkitRequestAnimationFrame ||
@@ -31,9 +47,11 @@ var Photos = {
 		Photos.elements.each(function() {
 
 			var parentDistance = $(this).parent().offset().top;
+			var photoHeight = $(this).height();
 			var speed = $(this).attr('data-speed') * 10;
 			
-			$(this).css('transform', 'translate(-50%,' + ((distance - (distance / speed)) - (parentDistance - (distance / (speed * ( (speed / 10) * 0.75 ) )))) + 'px)');
+			// $(this).css('transform', 'translate(-50%,' + ((distance - (distance / speed)) - (parentDistance - (distance / (speed * ( (speed / 10) * 0.75 ) )))) + 'px)');
+			$(this).css('transform', 'translate(-50%,' + (((distance - (distance / speed)) - (parentDistance - (distance / (speed * ( (speed / 10) * 0.75 ) )))) + ((parentDistance / photoHeight) * 25) ) + 'px)');
 
 		});
 
@@ -125,10 +143,11 @@ var Mast = {
 	},
 
 	navPosition : function() {
-		// TODO replace 50 with percentage of viewport
+	
 		var distance = $(document).scrollTop();	
 		var windowHeight = $(window).height() - Mast.element.height();
-		var moveAmount = 50 + (50 / (windowHeight / distance));
+		var elementPadding = $(window).height() * 0.055;
+		var moveAmount = elementPadding + (elementPadding / (windowHeight / distance));
 
 		if (distance < windowHeight) {
 
@@ -136,7 +155,7 @@ var Mast = {
 
 		} else {
 
-			Mast.container.css('padding-top', '100px');
+			Mast.container.css('padding-top', (elementPadding * 2) + 'px');
 
 		}
 
@@ -159,7 +178,6 @@ var Logo = {
 	fixed : function() {
 
 		var distanceScrolled = $(document).scrollTop();
-
 		var moveAmount = distanceScrolled + ($(window).height() * 0.04);
 
 		Logo.element.css('top', moveAmount + 'px');
@@ -185,8 +203,6 @@ var ImageColumns = {
 
 		var distance = $(document).scrollTop();
 
-		console.log("parallax happening.");
-
 		ImageColumns.elements.each(function() {
 
 			var offset = $(this).attr('data-offset');
@@ -202,7 +218,6 @@ var ImageColumns = {
 
 }
 
-
 var ImageContainers = {
 
 	init : function() {
@@ -212,6 +227,7 @@ var ImageContainers = {
 	},
 
 	longElements : $(".long-parts-image-container"),
+
 	shortElements : $(".short-parts-image-container"),
 
 	sizing : function() {
@@ -250,7 +266,6 @@ var Parts = {
 
 			$(this).css('transform', 'scale(' + zoomLevel + ')');
 
-
 		}, function() {
 
 			$(this).attr('style', '');
@@ -263,17 +278,53 @@ var Parts = {
 
 
 
+var Team = {
+
+	init : function() {
+
+		Team.hover();
+
+	},
+
+	elements : $(".team-hover-trigger"),
+	image : $("#team-image"),
+	defaultImage : $("#team-image").attr('data-default'),
+
+	hover : function() {
+
+		Team.elements.hover(function() {
+			console.log('hovered over');
+			var imagePath = $(this).attr('data-img');
+
+			Team.image.attr('src', imagePath);
+
+		}, function() {
+
+			Team.image.attr('src', Team.defaultImage);
+
+		});
+
+	}
+
+}
+
 
 $(document).ready(function() {
 
-	Photos.init();
-	Mast.init();
 	Logo.init();
+	Mast.init();
+	Team.init();
+
+	if (thisPage === 'home' || thisPage === 'capabilities' || thisPage === 'pacific.home') {
+
+		Photos.init();
+		
+	}
 
 	if (thisPage === 'capabilities') {
 
 		ImageContainers.init();
-		// ImageColumns.init();
+		// Ima geColumns.init();
 		Parts.init();
 
 	}

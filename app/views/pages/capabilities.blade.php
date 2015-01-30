@@ -27,7 +27,7 @@ Capabilities - Smith Brothers Manufacturing
 </div>
 
 
-<div class="content">
+<div class="content" id="machine-list">
 
 	<div class="container">
 
@@ -35,7 +35,7 @@ Capabilities - Smith Brothers Manufacturing
 
 			<div class="parts-images-container">
 
-				<div class="parts-images-column" data-offset="15">
+				<div class="parts-images-column" data-offset="5">
 					<div class="parts-image-container long-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-1.jpg') }}" data-zoom="1.2"></img>
