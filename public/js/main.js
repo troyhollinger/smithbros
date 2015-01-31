@@ -178,7 +178,7 @@ var Logo = {
 	fixed : function() {
 
 		var distanceScrolled = $(document).scrollTop();
-		var moveAmount = distanceScrolled + ($(window).height() * 0.04);
+		var moveAmount = distanceScrolled + ($(window).height() * 0.01);
 
 		Logo.element.css('top', moveAmount + 'px');
 
@@ -321,7 +321,7 @@ $(document).ready(function() {
 		
 	}
 
-	if (thisPage === 'capabilities') {
+	if (thisPage === 'capabilities' || thisPage === 'pacific.home') {
 
 		ImageContainers.init();
 		// Ima geColumns.init();
