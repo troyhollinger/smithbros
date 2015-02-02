@@ -28,13 +28,21 @@ Route::get('pacific', ['as' => 'pacific.home', function() {
 
 Route::get('vendors', ['as' => 'vendors', function() {
 
-	return View::make('pages.vendors');
+	$backgroundImageArray = [asset('img/vendor-1.jpg'), asset('img/vendor-2.jpg')];
+	$randomIndex = mt_rand(0,1);
+	$backgroundImage = $backgroundImageArray[$randomIndex];
+
+	return View::make('pages.vendors', ['backgroundImagePath' => $backgroundImage]);
 
 }]);
 
 
 Route::get('quote', ['as' => 'quote', function() {
 
-	return View::make('pages.quote');
+	$backgroundImageArray = [asset('img/quote-1.jpg'), asset('img/quote-2.jpg')];
+	$randomIndex = mt_rand(0,1);
+	$backgroundImage = $backgroundImageArray[$randomIndex];
+
+	return View::make('pages.quote', ['backgroundImagePath' => $backgroundImage]);
 
 }]);

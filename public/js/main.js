@@ -46,14 +46,18 @@ var Photos = {
 
 		Photos.elements.each(function() {
 
-			var parentDistance = $(this).parent().offset().top;
+			var startingDistance = $(this).parent().offset().top;
 			var photoHeight = $(this).height();
-			var speed = $(this).attr('data-speed') * 10;
+			// var speed = $(this).attr('data-speed') * 10;
+			var speed = 0.05;
+			var moveAmount = (distance - (distance * speed)) - (startingDistance - (startingDistance * 0.038));
 			
 			// $(this).css('transform', 'translate(-50%,' + ((distance - (distance / speed)) - (parentDistance - (distance / (speed * ( (speed / 10) * 0.75 ) )))) + 'px)');
-			$(this).css('transform', 'translate(-50%,' + (((distance - (distance / speed)) - (parentDistance - (distance / (speed * ( (speed / 10) * 0.75 ) )))) + ((parentDistance / photoHeight) * 25) ) + 'px)');
+			// $(this).css('transform', 'translate(-50%,' + (((distance - (distance / speed)) - (parentDistance - (distance / (speed * ( (speed / 10) * 0.75 ) )))) + ((parentDistance / photoHeight) * 25) ) + 'px)');
 
-		});
+			$(this).css('transform', 'translate(-50%,' + moveAmount + 'px)');
+
+		});	
 
 		Photos.loop = requestAnimationFrame(Photos.parallax);
 
@@ -130,11 +134,14 @@ var Mast = {
 		// if user has scrolled past the point of mast fixation...
 		if (distance >= (document.body.offsetHeight - $(window).height())) {
 
-			Mast.element.css('background-color', 'transparent')
+			// Mast.element.css('background-color', 'transparent')
+			Mast.element.addClass('nav-transparent').removeClass('nav-opaque');
+
 
 		} else {
 
-			Mast.element.css('background-color', 'white');
+			// Mast.element.css('background-color', 'white');
+			Mast.element.addClass('nav-opaque').removeClass('nav-transparent');
 
 		}
 
@@ -315,16 +322,16 @@ $(document).ready(function() {
 	Mast.init();
 	Team.init();
 
-	if (thisPage === 'home' || thisPage === 'capabilities' || thisPage === 'pacific.home') {
+	// if (thisPage === 'home' || thisPage === 'capabilities' || thisPage === 'pacific.home') {
 
-		Photos.init();
+	Photos.init();
 		
-	}
+	// }
 
 	if (thisPage === 'capabilities' || thisPage === 'pacific.home') {
 
 		ImageContainers.init();
-		// Ima geColumns.init();
+		// ImageColumns.init();
 		Parts.init();
 
 	}

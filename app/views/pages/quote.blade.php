@@ -9,6 +9,8 @@ Request A Quote - Smith Brothers Manufacturing
 
 <div class="vendor-container">
 
+	<div class="photo" data-speed="2" style="background-image:url({{ $backgroundImagePath }})"></div>
+
 	<div class="container">
 
 		<div class="vendor-info">
