@@ -35,104 +35,141 @@ Capabilities - Smith Brothers Manufacturing
 
 			<div class="parts-images-container">
 
+
 				<div class="parts-images-column" data-offset="5">
 					<div class="parts-image-container long-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-1.jpg') }}" data-zoom="1.2"></img>
 						</div>
+						<div class="parts-image-caption"><p>GANESH CNC 70MM-TTMY 8 AXIS</p></div>
 					</div>
+
 					<div class="parts-image-container short-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-4.jpg') }}" data-zoom="1.5"></img>
 						</div>
+						<div class="parts-image-caption"><p>&lsquo;MADE SINCE GLEN&rsquo; BROWN &amp; SHARPE #0</p></div>
 					</div>
+
 					<div class="parts-image-container long-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-7.jpg') }}" data-zoom="1.2"></img>
 						</div>
+						<div class="parts-image-caption"><p>GANESH CNC 70MM-TTMY 8 AXIS</p></div>
 					</div>
+
 					<div class="parts-image-container short-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-10.jpg') }}" data-zoom="1.6"></img>
 						</div>
+						<div class="parts-image-caption"><p>CONOMATIC 1”</p></div>
 					</div>
+
 					<div class="parts-image-container long-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-13.jpg') }}" data-zoom="1.05"></img>
 						</div>
+						<div class="parts-image-caption"><p>GANESH CNC 70MM-TTMY 8 AXIS</p></div>
 					</div>
+
 					<div class="parts-image-container short-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-16.jpg') }}" data-zoom="1.5"></img>
 						</div>
+						<div class="parts-image-caption"><p>BROWN &amp; SHARPE #2SB</p></div>
 					</div>
 				</div>
+
 
 				<div class="parts-images-column" data-offset="37">
 					<div class="parts-image-container short-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-2.jpg') }}" data-zoom="1.2"></img>
 						</div>
+						<div class="parts-image-caption"><p>GANESH CNC CS-32 - 7 AXIS</p></div>
 					</div>
+
 					<div class="parts-image-container long-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-5.jpg') }}" data-zoom="1.05"></img>
 						</div>
+						<div class="parts-image-caption"><p>GANESH CNC 70MM-TTMY 8 AXIS</p></div>
 					</div>
+
 					<div class="parts-image-container short-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-8.jpg') }}" data-zoom="1.2"></img>
 						</div>
+						<div class="parts-image-caption"><p>GANESH CNC CS-32 - 7 AXIS</p></div>
 					</div>
+
 					<div class="parts-image-container long-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-11.jpg') }}" data-zoom="1.2"></img>
 						</div>
+						<div class="parts-image-caption"><p>GANESH CNC CS-32 - 7 AXIS</p></div>
 					</div>
+
 					<div class="parts-image-container short-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-14.jpg') }}" data-zoom="2"></img>
 						</div>
+						<div class="parts-image-caption"><p>CONOMATIC 11/16”</p></div>
 					</div>
+
 					<div class="parts-image-container long-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-17.jpg') }}" data-zoom="1.2"></img>
 						</div>
+						<div class="parts-image-caption"><p>HASS CNC VF2 W/ 4TH AXIS</p></div>
 					</div>
 				</div>
+
 
 				<div class="parts-images-column" data-offset="15">
 					<div class="parts-image-container long-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-3.jpg') }}" data-zoom="1.2"></img>
 						</div>
+						<div class="parts-image-caption"><p>GANESH CNC 70MM-TTMY 8 AXIS</p></div>
 					</div>
+
 					<div class="parts-image-container short-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-6.jpg') }}" data-zoom="1.2"></img>
 						</div>
+						<div class="parts-image-caption"><p>HASS CNC VF2 W/ 4TH AXIS</p></div>
 					</div>
+
 					<div class="parts-image-container long-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-9.jpg') }}" data-zoom="1.5"></img>
 						</div>
+						<div class="parts-image-caption"><p>SERVO CAM 3/4”</p></div>
 					</div>
+
 					<div class="parts-image-container short-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-12.jpg') }}" data-zoom="1.2"></img>
 						</div>
+						<div class="parts-image-caption"><p>CONOMATIC 1-3/4”</p></div>
 					</div>
+
 					<div class="parts-image-container long-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-15.jpg') }}" data-zoom="1.2"></img>
 						</div>
+						<div class="parts-image-caption"><p>HASS CNC VF2 W/ 4TH AXIS</p></div>
 					</div>
+
 					<div class="parts-image-container short-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-18.jpg') }}" data-zoom="1.2"></img>
 						</div>
+						<div class="parts-image-caption"><p>CONOMATIC 11/16”</p></div>
 					</div>
 				</div>
+
 
 				<div class="clear"></div>
 
