@@ -4,13 +4,13 @@
 
 		<div class="container">
 
-			<div class="contact-info">
+			<!-- <div class="contact-info">
 
-				<p class="bold">MANUFACTURERS OF SCREW MACHINE PRODUCTS AND PACIFIC WELDING ELECTRODES</p>
-				<br>
+				<p class="bold">MANUFACTURERS OF SCREW MACHINE PRODUCTS<br> AND PACIFIC WELDING ELECTRODES</p>
+				<br> 
 				<a href="{{ route('quote') }}"><div class="button">Request a quote</div></a>
 
-			</div>
+			</div> -->
 
 			<div class="team-container">
 
