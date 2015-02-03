@@ -309,7 +309,6 @@ var Parts = {
 }
 
 
-
 var Team = {
 
 	init : function() {
@@ -346,13 +345,8 @@ $(document).ready(function() {
 	Logo.init();
 	Mast.init();
 	Team.init();
-
-	// if (thisPage === 'home' || thisPage === 'capabilities' || thisPage === 'pacific.home') {
-
 	Photos.init();
 		
-	// }
-
 	if (thisPage === 'capabilities' || thisPage === 'pacific.home') {
 
 		ImageContainers.init();
@@ -362,9 +356,6 @@ $(document).ready(function() {
 	}
 
 });
-
-
-
 
 $(window).resize(function() {
 
