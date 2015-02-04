@@ -241,6 +241,18 @@ nav {
 
 	}
 
+	li.darken-at-contact {
+
+		color:$dark;
+
+	}
+
+	li.contact-lighter {
+
+		color:$light;
+
+	}
+
 	ul {
 
 		overflow: auto;
@@ -946,7 +958,7 @@ nav {
 .pacific-title {
 
 	@extend .capabilities-title;
-	
+
 	color:$light;
 
 }

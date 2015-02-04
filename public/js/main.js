@@ -83,6 +83,10 @@ var Mast = {
 
 	container : $(".nav").find('.container'),
 
+	listItems : $(".nav").find('li'),
+
+	contactListItem : $("#contact-list-item"),
+
 	previousDistance : 0,
 	previousHeight : $(window).height() * 0.20,
 
@@ -133,15 +137,16 @@ var Mast = {
 
 		// if user has scrolled past the point of mast fixation...
 		if (distance >= (document.body.offsetHeight - $(window).height())) {
-
-			// Mast.element.css('background-color', 'transparent')
+			
 			Mast.element.addClass('nav-transparent').removeClass('nav-opaque');
-
+			Mast.listItems.addClass('darken-at-contact');
+			Mast.contactListItem.addClass('contact-lighter');
 
 		} else {
 
-			// Mast.element.css('background-color', 'white');
 			Mast.element.addClass('nav-opaque').removeClass('nav-transparent');
+			Mast.listItems.removeClass('darken-at-contact');
+			Mast.contactListItem.removeClass('contact-lighter');
 
 		}
 
