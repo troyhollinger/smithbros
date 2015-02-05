@@ -10,7 +10,7 @@
 
 <div class="photo-container">
 
-	<div class="photo-caption first-caption darker">
+	<div class="photo-caption first-caption">
 		<h2 class="photo-caption-title">Here since dirt roads and early century coupes.</h2>
 		<p class="photo-caption-description">Smith Brothers Original / Current shop.</p>
 	</div>
