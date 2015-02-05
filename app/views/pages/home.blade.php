@@ -35,7 +35,7 @@
 <div class="photo-container">
 
 	<div class="photo-caption darker">
-		<h2 class="photo-caption-title">Glem Smith 1947</h2>
+		<h2 class="photo-caption-title">Glen Smith 1947</h2>
 		<p class="photo-caption-description">Remembering our Past, Prepared for the Future. </p>
 	</div>
 

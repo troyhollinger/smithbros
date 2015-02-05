@@ -41,7 +41,7 @@ Capabilities - Smith Brothers Manufacturing
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-1.jpg') }}" data-zoom="1.2"></img>
 						</div>
-						<div class="parts-image-caption"><p>GANESH CNC 70MM-TTMY 8 AXIS</p></div>
+						<div class="parts-image-caption"><p>GANESH CNC 70MM-TTMY</p></div>
 					</div>
 
 					<div class="parts-image-container short-parts-image-container">
@@ -55,7 +55,7 @@ Capabilities - Smith Brothers Manufacturing
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-7.jpg') }}" data-zoom="1.2"></img>
 						</div>
-						<div class="parts-image-caption"><p>GANESH CNC 70MM-TTMY 8 AXIS</p></div>
+						<div class="parts-image-caption"><p>GANESH CNC 70MM-TTMY</p></div>
 					</div>
 
 					<div class="parts-image-container short-parts-image-container">
@@ -69,7 +69,7 @@ Capabilities - Smith Brothers Manufacturing
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-13.jpg') }}" data-zoom="1.05"></img>
 						</div>
-						<div class="parts-image-caption"><p>GANESH CNC 70MM-TTMY 8 AXIS</p></div>
+						<div class="parts-image-caption"><p>GANESH CNC 70MM-TTMY</p></div>
 					</div>
 
 					<div class="parts-image-container short-parts-image-container">
@@ -86,28 +86,28 @@ Capabilities - Smith Brothers Manufacturing
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-2.jpg') }}" data-zoom="1.2"></img>
 						</div>
-						<div class="parts-image-caption"><p>GANESH CNC CS-32 - 7 AXIS</p></div>
+						<div class="parts-image-caption"><p>GANESH CNC CS-32</p></div>
 					</div>
 
 					<div class="parts-image-container long-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-5.jpg') }}" data-zoom="1.05"></img>
 						</div>
-						<div class="parts-image-caption"><p>GANESH CNC 70MM-TTMY 8 AXIS</p></div>
+						<div class="parts-image-caption"><p>GANESH CNC 70MM-TTMY</p></div>
 					</div>
 
 					<div class="parts-image-container short-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-8.jpg') }}" data-zoom="1.2"></img>
 						</div>
-						<div class="parts-image-caption"><p>GANESH CNC CS-32 - 7 AXIS</p></div>
+						<div class="parts-image-caption"><p>GANESH CNC CS-32</p></div>
 					</div>
 
 					<div class="parts-image-container long-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-11.jpg') }}" data-zoom="1.2"></img>
 						</div>
-						<div class="parts-image-caption"><p>GANESH CNC CS-32 - 7 AXIS</p></div>
+						<div class="parts-image-caption"><p>GANESH CNC CS-32</p></div>
 					</div>
 
 					<div class="parts-image-container short-parts-image-container">
@@ -121,7 +121,7 @@ Capabilities - Smith Brothers Manufacturing
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-17.jpg') }}" data-zoom="1.2"></img>
 						</div>
-						<div class="parts-image-caption"><p>HASS CNC VF2 W/ 4TH AXIS</p></div>
+						<div class="parts-image-caption"><p>HASS CNC VF2</p></div>
 					</div>
 				</div>
 
@@ -131,14 +131,14 @@ Capabilities - Smith Brothers Manufacturing
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-3.jpg') }}" data-zoom="1.2"></img>
 						</div>
-						<div class="parts-image-caption"><p>GANESH CNC 70MM-TTMY 8 AXIS</p></div>
+						<div class="parts-image-caption"><p>GANESH CNC 70MM-TTMY</p></div>
 					</div>
 
 					<div class="parts-image-container short-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-6.jpg') }}" data-zoom="1.2"></img>
 						</div>
-						<div class="parts-image-caption"><p>HASS CNC VF2 W/ 4TH AXIS</p></div>
+						<div class="parts-image-caption"><p>HASS CNC VF2</p></div>
 					</div>
 
 					<div class="parts-image-container long-parts-image-container">
@@ -159,7 +159,7 @@ Capabilities - Smith Brothers Manufacturing
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image" src="{{ asset('img/parts/parts-15.jpg') }}" data-zoom="1.2"></img>
 						</div>
-						<div class="parts-image-caption"><p>HASS CNC VF2 W/ 4TH AXIS</p></div>
+						<div class="parts-image-caption"><p>HASS CNC VF2</p></div>
 					</div>
 
 					<div class="parts-image-container short-parts-image-container">

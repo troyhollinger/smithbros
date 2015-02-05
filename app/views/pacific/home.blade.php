@@ -10,11 +10,13 @@ Pacific Welding
 
 <div class="photo-container">
 
+
+
 	<div class="photo" data-speed="2" style="background-image:url({{ asset('img/pacific-1.jpg') }}); background-position:bottom;"></div>
 
 </div>	
 
-<div class="content">
+<div class="content" id="catalog">
 
 	<div class="container">
 
@@ -282,11 +284,25 @@ Pacific Welding
 
 <div class="photo-container">
 
+	<div class="photo-caption">
+
+		<h2 class="photo-caption-title">Made in the U.S.A</h2>
+		<p class="photo-caption-description">We are the Only Spot Welding Electrode MFG on the Pacific.</p>
+
+	</div>
+
 	<div class="photo" data-speed="2" style="background-image:url({{ asset('img/pacific-2.jpg') }}); background-position:bottom;"></div>
 
 </div>
 
 <div class="photo-container">
+
+	<div class="photo-caption">
+
+		<h2 class="photo-caption-title">Pacific Welding</h2>
+		<p class="photo-caption-description">Spot Weld Inserts, Electrodes and Accessories. Contact us now for a full catalog.</p>
+
+	</div>
 
 	<div class="photo" data-speed="2" style="background-image:url({{ asset('img/pacific-3.jpg') }}); background-position:bottom;"></div>
 	

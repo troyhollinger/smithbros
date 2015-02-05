@@ -124,7 +124,7 @@ html {
 
 #pacific-logo {
 
-	width:120px;
+	width:140px;
 
 	@include breakpoint(large) {
 
@@ -150,6 +150,7 @@ html {
 	width:100%;
 	height:20vh;
 	z-index: 9;
+	background-color: rgba(255,255,255,0.8);
 	@include transition(all .25s ease);
 
 	.container {
@@ -209,6 +210,13 @@ nav {
 			color:$dark;
 			font-size: .95rem;
 			@include transition(transform .3s);
+
+			@include breakpoint(large) {
+
+				font-size: .9rem;
+
+			}
+
 		}
 
 		&:hover {
@@ -409,7 +417,7 @@ nav {
 
 	&.darker {
 
-		color: $dark;
+		color: black;
 
 	}
 
@@ -517,9 +525,8 @@ nav {
 
 .contact-info {
 
-	// @extend .vendor-info;
 	position: absolute;
-	top:2vh;
+	top:1vh;
 	width:100%;
 	z-index: 1;
 	color:$dark;
@@ -540,6 +547,32 @@ nav {
 
 		float:right;
 		text-transform: uppercase;
+		position: relative;
+		@include transition(transform .3s);
+		// overflow: hidden;
+
+		&:before {
+
+			top:100%;
+			position: absolute;
+			content: attr(data-hover);
+			text-transform: uppercase;
+			color:$dark;
+			font-size: .95rem;
+			@include transition(transform .3s);
+		}
+
+		&:hover {
+
+			@include transform(translate(0, -100%));
+
+			&:before {
+
+				@include transform(translate(0, 0));
+
+			}
+
+		}
 
 	}
 
@@ -672,7 +705,7 @@ nav {
 	bottom: 10px;
 	left:10px;
 	color:$light;
-	font-size: .8rem;
+	font-size: .7rem;
 	width:90%;
 
 }
@@ -807,6 +840,7 @@ nav {
 	@extend .form;
 
 	margin:0 auto;
+	padding-top: 30px;
 	width:25%;
 
 	textarea {
@@ -941,7 +975,7 @@ nav {
 		width:100%;
 		height:2px;
 		background-color: black;
-		border-radius: 500px;
+		// border-radius: 500px;
 		@include transition(all .15s ease);
 
 		&:first-child {
@@ -952,6 +986,7 @@ nav {
 
 		&:nth-child(2) {
 			@include center;
+			top:49.25%;
 		}
 
 		&:last-child {
@@ -971,8 +1006,8 @@ nav {
 	.hamburger {
 
 		float:left;
-		width:18px;
-		height:.8rem;
+		width:16px;
+		height:.9rem;
 
 	}
 
@@ -981,6 +1016,7 @@ nav {
 		margin-left: 10px;
 		float:left;
 		white-space: nowrap;
+		font-size: .9em;
 
 	}
 

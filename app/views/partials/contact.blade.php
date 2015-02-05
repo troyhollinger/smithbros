@@ -7,8 +7,7 @@
 			<div class="contact-info">
 
 				<p class="bold">MANUFACTURERS OF SCREW MACHINE PRODUCTS<br> AND PACIFIC WELDING ELECTRODES</p>
-				<!-- <br>  -->
-				<a href="{{ route('quote') }}">Request quote</a>
+				<a href="{{ route('quote') }}" data-hover="Request quote">Request quote</a>
 
 			</div>
 

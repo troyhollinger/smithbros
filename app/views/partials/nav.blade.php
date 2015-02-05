@@ -1,6 +1,6 @@
 
 @if (strpos(Route::currentRouteName(), 'pacific') !== false)
-<a href="{{ route('pacific.home') }}"><img class="logo" id="pacific-logo" src="{{ asset('img/pacific-logo.png') }}"></a>
+<a href="{{ route('pacific.home') }}"><img class="logo" id="pacific-logo" src="{{ asset('img/pacific-logo.svg') }}"></a>
 @elseif(Route::currentRouteName() == 'vendors' || Route::currentRouteName() == 'quote')
 <a href="{{ route('home') }}"><img class="logo" src="{{ asset('img/script-logo-white.png') }}"></a>
 @else
@@ -15,7 +15,7 @@
 			<ul>
 				@if (strpos(Route::currentRouteName(), 'pacific') !== false)
 				<a href=""><li {{ Request::is('pacific') ? 'class="lighter"' : '' }} data-hover="Overview">Overview</li></a>
-				<a href=""><li {{ Request::is('capabilities') ? 'class="lighter"' : '' }} data-hover="Catalog">Catalog</li></a>
+				<a href="#catalog"><li {{ Request::is('capabilities') ? 'class="lighter"' : '' }} data-hover="Catalog">Catalog</li></a>
 				<a href="#contact"><li id="contact-list-item" data-hover="Contact">Contact</li></a>
 				<a href="{{ route('home') }}"><li data-hover="Smith Bros MFG">Smith Bros MFG</li></a>
 				<a href="{{ route('vendors') }}"><li {{ Request::is('vendors') || Request::is('quote') ? 'class="lighter"' : '' }} data-hover="Vendors">Vendors</li></a>
