@@ -10,7 +10,7 @@
 
 <div class="photo-container">
 
-	<div class="photo-caption first-caption">
+	<div class="photo-caption first-caption darker">
 		<h2 class="photo-caption-title">Here since dirt roads and early century coupes.</h2>
 		<p class="photo-caption-description">Smith Brothers Original / Current shop.</p>
 	</div>
@@ -22,7 +22,7 @@
 
 <div class="photo-container">
 
-	<div class="photo-caption">
+	<div class="photo-caption darker">
 		<h2 class="photo-caption-title">Probably the oldest machine shop in San Diego, certaintly the most qualified.</h2>
 		<p class="photo-caption-description">Glen and Ameda Smith started manufacturing out of a garage then they moved to the present facility as seen in this picture from 1947.</p>
 	</div>
@@ -34,7 +34,7 @@
 
 <div class="photo-container">
 
-	<div class="photo-caption">
+	<div class="photo-caption darker">
 		<h2 class="photo-caption-title">Glem Smith 1947</h2>
 		<p class="photo-caption-description">Remembering our Past, Prepared for the Future. </p>
 	</div>

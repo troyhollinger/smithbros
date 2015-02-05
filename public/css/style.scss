@@ -93,6 +93,12 @@ $gotham : 'Gotham-Book', 'Montserrat', 'Helvetica', Arial;
 
 }
 
+.smaller {
+
+	font-size: .8em;
+
+}
+
 html {
 
 	background-color: $dark;
@@ -100,7 +106,6 @@ html {
 	color:$dark;
 
 }
-
 
 .logo {
 
@@ -144,7 +149,6 @@ html {
 	bottom: 0;
 	width:100%;
 	height:20vh;
-	// background-color: rgba(255,255,255,0.5);
 	z-index: 9;
 	@include transition(all .25s ease);
 
@@ -153,13 +157,11 @@ html {
 
 	}
 
-	// display: none;
-
 }
 
 .nav-opaque {
 
-	background-color: rgba(255,255,255,0.9);
+	background-color: rgba(255,255,255,0.8);
 
 }
 
@@ -260,7 +262,6 @@ nav {
 	}
 
 } 
-
 
 .content {
 
@@ -381,7 +382,6 @@ nav {
 
 }
 
-
 .photo-static {
 
 	@extend .photo;
@@ -402,8 +402,14 @@ nav {
 
 	&.first-caption {
 
-		bottom:28%;
-		bottom: 28vh;
+		bottom:25%;
+		bottom: 25vh;
+
+	}
+
+	&.darker {
+
+		color: $dark;
 
 	}
 
@@ -466,6 +472,7 @@ nav {
 .machine-photo-description {
 
 	text-transform: uppercase;
+	font-weight: bold;
 
 }
 
@@ -479,6 +486,12 @@ nav {
 	width:100%;
 	width:100vw;
 	background-color: #e7e9ea;
+
+	.container {
+
+		position: relative;
+
+	}
 
 }
 
@@ -497,6 +510,36 @@ nav {
 		top:48%;
 
 		// padding-top: 18vh;
+
+	}
+
+}
+
+.contact-info {
+
+	// @extend .vendor-info;
+	position: absolute;
+	top:2vh;
+	width:100%;
+	z-index: 1;
+	color:$dark;
+
+	p {
+		float:left;
+	}
+
+	.button {
+
+		background-color: $dark;
+		color:white;
+		float:right;
+
+	}
+
+	a {
+
+		float:right;
+		text-transform: uppercase;
 
 	}
 
@@ -525,7 +568,7 @@ nav {
 	font-family: $gotham;
 	color:white;
 	float:left;
-	font-size: 1.3rem;
+	font-size: 1.8rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	line-height: 1.8rem;
@@ -533,7 +576,7 @@ nav {
 }
 
 .info {
-
+	position: relative;
 	float:right;
 	text-align: right;
 	color:white;
@@ -545,6 +588,25 @@ nav {
 		&:hover {
 
 			text-decoration: underline;
+
+		}
+
+	}
+
+	table {
+
+		// width:100%;
+		float:right;
+
+	}
+
+	td {
+
+		text-align: right;
+
+		&:first-child {
+
+			padding-right: 10px;
 
 		}
 
@@ -615,8 +677,6 @@ nav {
 
 }
 
-
-
 .parts-image-centerer {
 
 	@include center;
@@ -642,9 +702,6 @@ nav {
 
 }
 
-
-
-
 .vendor-container {
 
 	@extend .photo-container;
@@ -661,33 +718,22 @@ nav {
 
 .vendor-info {
 
-	width:30%;
+	width:37%;
 	color:white;
 	text-transform: uppercase;
 	font-size: 1.1rem;
 	float:left;
 
-}
+	p:first-child {
 
-.contact-info {
-
-	@extend .vendor-info;
-	width:100%;
-	color:$dark;
-
-	p {
-		float:left;
-	}
-
-	.button {
-
-		background-color: $dark;
-		color:white;
-		float:right;
+		font-size: 1.5rem;
+		line-height: 1.5rem;
 
 	}
 
 }
+
+
 
 .button {
 
@@ -809,7 +855,7 @@ nav {
 .team-container {
 
 	position: relative;
-	width:100%;
+	width:95%;
 	height:auto;
 	margin:0 auto;
 
@@ -821,8 +867,6 @@ nav {
 	}
 
 }
-
-
 
 .team-hover-trigger-container {
 
@@ -918,7 +962,6 @@ nav {
 
 	}	
 
-
 }
 
 .capabilities-title {
@@ -941,19 +984,13 @@ nav {
 
 	}
 
-
-
 }
-
-
-
 
 .pacific-overview-container {
 
 	@extend .photo-container;
 
 }
-
 
 .pacific-title {
 

@@ -7,7 +7,6 @@
 <a href="{{ route('home') }}"><img class="logo" src="{{ asset('img/script-logo.png') }}"></a>
 @endif
 
-
 <div class="nav">
 
 	<div class="container">

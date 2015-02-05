@@ -4,13 +4,13 @@
 
 		<div class="container">
 
-			<!-- <div class="contact-info">
+			<div class="contact-info">
 
 				<p class="bold">MANUFACTURERS OF SCREW MACHINE PRODUCTS<br> AND PACIFIC WELDING ELECTRODES</p>
-				<br> 
-				<a href="{{ route('quote') }}"><div class="button">Request a quote</div></a>
+				<!-- <br>  -->
+				<a href="{{ route('quote') }}">Request quote</a>
 
-			</div> -->
+			</div>
 
 			<div class="team-container">
 
@@ -43,12 +43,26 @@
 
 				<p class="address">5304 Banks Street <br>San Diego, CA 92110 </p>
 
-				<p class="info">
-					P (619)	296-3171
-					<br>
-					F (619) 296-7243
-					<br>
+				<div class="info">
+
+					<table>
+						<tr>
+							<td>P</td>
+							<td>(619) 296-3171</td>
+						</tr>
+						<tr>
+							<td>F</td>
+							<td>(619) 296-7243</td>
+						</tr>
+							
+					</table>
+
+					<div class="clear"></div>
+
 					<a href="mailto:info@smithbrosmfg.com">info@smithbrosmfg.com</a>
+
+				</div>
+					
 				</p>
 
 			</div>

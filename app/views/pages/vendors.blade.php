@@ -24,7 +24,7 @@ Vendors - Smith Brothers Manufacturing
 			<p class="bold">ROHR Industries</p>
 			<p class="bold">Hughes</p>
 			<br>
-			<p class="bold">And Hopefully You!</p>
+			<p class="bold smaller">And Hopefully You!</p>
 			<br>
 
 			<a href="{{ route('quote') }}"><div class="button">Request a quote</div></a>
