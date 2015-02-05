@@ -2,14 +2,18 @@
 
 	<div class="contact-fixed-container">
 
-		<div class="container">
+		<div class="container contact-info-outer-container">
 
 			<div class="contact-info">
 
 				<p class="bold">MANUFACTURERS OF SCREW MACHINE PRODUCTS<br> AND PACIFIC WELDING ELECTRODES</p>
-				<a href="{{ route('quote') }}" data-hover="Request quote">Request quote</a>
+				<!-- <a href="{{ route('quote') }}" data-hover="Request quote">Request quote</a> -->
 
 			</div>
+
+		</div>
+
+		<div class="container team-outer-container">
 
 			<div class="team-container">
 

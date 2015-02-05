@@ -512,12 +512,15 @@ nav {
 	width:100vw;
 	top:0;
 
-	& > .container {
+	& > .team-outer-container {
 
 		@include center;
 		top:48%;
+	}
 
-		// padding-top: 18vh;
+	& > .contact-info-outer-container {
+
+		margin-top: 15vh;
 
 	}
 
@@ -525,8 +528,8 @@ nav {
 
 .contact-info {
 
-	position: absolute;
-	top:1vh;
+	// position: absolute;
+	position: relative;
 	width:100%;
 	z-index: 1;
 	color:$dark;
@@ -889,7 +892,7 @@ nav {
 .team-container {
 
 	position: relative;
-	width:95%;
+	width:100%;
 	height:auto;
 	margin:0 auto;
 

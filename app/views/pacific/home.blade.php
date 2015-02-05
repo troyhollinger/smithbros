@@ -122,7 +122,7 @@ Pacific Welding
 						<img class="parts-image" src="{{ asset('img/parts/pacific-parts-9.jpg') }}" data-zoom="1.2"></img>
 					</div>
 					<div class="parts-image-caption">
-						<p class="bold">INSERT ELECTRODE</p>S
+						<p class="bold">INSERT ELECTRODES</p>
 						<p>1 SERIES - PG 12</p>
 					</div>
 				</div>
