@@ -839,13 +839,21 @@ nav {
 
 }
 
+.quote-form-container {
+
+	float:right;
+	position: relative;
+	width:33%;
+
+}
+
 .quote-form {
 
 	@extend .form;
 
 	margin:0 auto;
-	padding-top: 30px;
-	width:25%;
+	// padding-top: 30px;
+	width:100%;
 
 	textarea {
 		margin-top: 1rem;

@@ -19,7 +19,7 @@ Request A Quote - Smith Brothers Manufacturing
 
 		</div>
 
-		<div class="quote-form-container clear">
+		<div class="quote-form-container">
 
 			<form class="quote-form">
 
@@ -56,16 +56,17 @@ Request A Quote - Smith Brothers Manufacturing
 				<div class="quote-form-actions">
 
 					<a href="{{ route('vendors') }}"><div class="quote-form-action cancel button">Cancel</div></a>
-					<div class="quote-form-action request button">Request A Quote</div>
+					<div class="quote-form-action request button">Request</div>
 
 					<div class="clear"></div>
 
 				</div>
 
 			</form>
-
-
 		</div>
+
+		<div class="clear"></div>
+
 
 	</div>
 
