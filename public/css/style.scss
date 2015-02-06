@@ -783,6 +783,23 @@ nav {
 	text-align: center;
 	border: none;
 	text-transform: uppercase;
+	@include box-sizing(border-box);
+
+	&.not-ready {
+
+		background-color: transparent;
+		border:2px solid white;
+		color:white;
+
+	}
+
+	&.ready {
+
+		background-color: white;
+		color:$dark;
+		border:none;
+
+	}
 
 }
 

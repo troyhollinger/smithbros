@@ -25,6 +25,32 @@
 
 'use strict';
 
+var app = angular.module('vendor', []);
+
+app.controller('LoginController', ['$scope', function($scope) {
+
+	$scope.filledIn = false;
+
+	$scope.checkForCompletion = function() {
+
+		if ($scope.email && $scope.password) {
+
+			$scope.filledIn = true;
+
+		} else {
+
+			$scope.filledIn = false;			
+
+		}
+
+	}
+
+}]);
+
+
+
+
+
 // Smooth scrolling to anchor tag
 $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -329,7 +355,7 @@ var Team = {
 	hover : function() {
 
 		Team.elements.hover(function() {
-			console.log('hovered over');
+			
 			var imagePath = $(this).attr('data-img');
 
 			Team.image.attr('src', imagePath);
@@ -341,6 +367,17 @@ var Team = {
 		});
 
 	}
+
+}
+
+
+var Captions = {
+
+	init : function() {
+
+
+	}
+
 
 }
 
@@ -371,3 +408,11 @@ $(window).resize(function() {
 	}
 
 });
+
+
+
+
+
+
+
+
