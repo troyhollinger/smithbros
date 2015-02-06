@@ -60,6 +60,13 @@
 			
 		</div>
 
+		<div class="nav-request-quote">
+			<ul>
+				<a href="{{ route('quote') }}"><li data-hover="Request Quote">Request Quote</li></a>
+			</ul>
+			
+		</div>
+
 		<div class="clear"></div>
 
 	</div>

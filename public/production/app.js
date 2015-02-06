@@ -138,6 +138,10 @@ var Mast = {
 
 	contactListItem : $("#contact-list-item"),
 
+	requestQuoteButton : $(".nav-request-quote"),
+
+	pageElements : $(".nav-page-elements"),
+
 	previousDistance : 0,
 	previousHeight : $(window).height() * 0.20,
 
@@ -192,12 +196,16 @@ var Mast = {
 			Mast.element.addClass('nav-transparent').removeClass('nav-opaque');
 			Mast.listItems.addClass('darken-at-contact');
 			Mast.contactListItem.addClass('contact-lighter');
+			Mast.pageElements.hide();
+			Mast.requestQuoteButton.show();
 
 		} else {
 
 			Mast.element.addClass('nav-opaque').removeClass('nav-transparent');
 			Mast.listItems.removeClass('darken-at-contact');
 			Mast.contactListItem.removeClass('contact-lighter');
+			Mast.requestQuoteButton.hide();
+			Mast.pageElements.show();
 
 		}
 
