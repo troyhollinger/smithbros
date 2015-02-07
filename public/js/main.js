@@ -353,11 +353,90 @@ var Team = {
 
 }
 
+$.getDocHeight = function(){
+     var D = document;
+     return Math.max(Math.max(D.body.scrollHeight,D.documentElement.scrollHeight), Math.max(D.body.offsetHeight, D.documentElement.offsetHeight), Math.max(D.body.clientHeight, D.documentElement.clientHeight));
+};
+
 
 var Captions = {
 
 	init : function() {
 
+		Captions.setStartPosition();
+
+		requestAnimationFrame(Captions.push);
+
+	},
+
+	elements : $(".photo-caption"),
+
+	setStartPosition : function() {
+
+		Captions.elements.each(function(index) {
+
+			var i = index + 1;
+			var distance = 0;
+			var windowHeight = $(window).height();
+
+
+			if ($(this).hasClass('first-story-caption')) {
+
+				// distance = (($(window).height() * 0.75) * i) - $(this).height();
+				distance = (windowHeight * i) - ((windowHeight * 0.25) + $(this).height());
+
+			} else {
+
+				// distance = (($(window).height() * 0.9) * i) - $(this).height();
+				distance = (windowHeight * i) - ((windowHeight * 0.1) + $(this).height());
+
+			}
+
+			// console.log(windowHeight - 180);
+
+			$(this).css('top', distance + 'px').attr('data-top', distance);
+
+		});
+
+	},
+
+	push : function() {
+
+		var distance = $(document).scrollTop();
+
+		Captions.elements.each(function(index) {
+
+			var height = $(this).height();
+			var nextTop = parseInt($(this).next().attr('data-top'));
+			var thisTop = parseInt($(this).css('top'));
+			var newTop = nextTop - height;
+			var defaultTop = $(this).attr('data-top');
+
+			// distance scrolled is past activation point
+			if ( distance > (defaultTop - 150) && distance < (nextTop) - (height + 150) ) {
+
+				$(this).css({position : 'fixed', top : '150px'});
+			// distance scrolled is past next elements activation point, fixate this element
+			} else if (distance > (nextTop) - (height + 150)) {
+
+				$(this).css({position : 'absolute', top : newTop + 'px' });
+
+			//
+			} else {
+
+				$(this).css({top : defaultTop + 'px', position : 'absolute' });
+
+
+			}
+
+			// console.log($(this).get(0).style.top);
+			// console.log(parseInt($(this).css('top')));
+
+		});
+
+		
+
+		requestAnimationFrame(Captions.push);
 
 	}
 
@@ -371,6 +450,12 @@ $(document).ready(function() {
 	Mast.init();
 	Team.init();
 	Photos.init();
+
+	if (thisPage === 'home') {
+
+		Captions.init();
+
+	}
 		
 	if (thisPage === 'capabilities' || thisPage === 'pacific.home') {
 
@@ -387,6 +472,12 @@ $(window).resize(function() {
 	if (thisPage === 'capabilities') {
 
 		ImageContainers.init();
+
+	}
+
+	if (thisPage === 'home') {
+
+		Captions.init();
 
 	}
 

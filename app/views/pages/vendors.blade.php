@@ -39,7 +39,6 @@ Vendors - Smith Brothers Manufacturing
 				<!-- These two inputs are for disabling chrome autocomplete -->
 				<input style="display:none" type="text" name="fakeusernameremembered"/>
 				<input style="display:none" type="password" name="fakepasswordremembered"/>
-				<!--  -->
 
 				<p><input type="text" name="vendor-email" id="vendor-email" autocomplete="off" ng-model="email" ng-keyup="checkForCompletion()"></p>
 				<p><label for="vendor-email">Email</label></p>
