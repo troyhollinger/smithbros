@@ -141,7 +141,7 @@ body {
 	position: relative;
 	height:auto;
 	@include transform(translate(0,0));
-	@include change;
+	@include transition(all .5s ease);
 
 	&.shifted {
 

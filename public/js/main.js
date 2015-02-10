@@ -1,5 +1,11 @@
 'use strict';
 
+function isTouchDevice() {
+
+    return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
+
+}
+
 var app = angular.module('vendor', []);
 
 app.controller('LoginController', ['$scope', function($scope) {
@@ -500,19 +506,41 @@ var MobileNav = {
 
 	init : function() {
 
-		MobileNav.hamburger.click(function() {
+		if (isTouchDevice()) {
 
-			if ($(this).hasClass('open')) {
+			MobileNav.hamburger.on('touchstart', function() {
 
-				MobileNav.close();
+				if ($(this).hasClass('open')) {
 
-			} else if ($(this).hasClass('closed')) {
+					MobileNav.close();
 
-				MobileNav.open();
+				} else if ($(this).hasClass('closed')) {
 
-			}
+					MobileNav.open();
 
-		});
+				}
+
+			});
+
+		} else {
+
+			MobileNav.hamburger.click(function() {
+
+				if ($(this).hasClass('open')) {
+
+					MobileNav.close();
+
+				} else if ($(this).hasClass('closed')) {
+
+					MobileNav.open();
+
+				}
+
+			});
+
+		}
+
+		
 
 	},
 
