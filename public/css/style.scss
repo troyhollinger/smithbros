@@ -423,6 +423,13 @@ nav {
 	width:50%;
 	float:left;
 
+	@include breakpoint(medium) {
+
+		width:100%;
+		float:none;
+
+	}
+
 }
 
 .column-right {
@@ -431,6 +438,13 @@ nav {
 	width:50%;
 	float:right;
 
+	@include breakpoint(medium) {
+
+		width:100%;
+		float:none;
+
+	}
+
 }
 
 .machine-list-container {
@@ -438,6 +452,15 @@ nav {
 	position: relative;
 	width:80%;
 	float:right;
+
+	@include breakpoint(medium) {
+
+		width:100%;
+		float:none;
+		@include box-sizing(border-box);
+		padding:0 15px;
+
+	}
 
 
 }
@@ -449,6 +472,12 @@ nav {
 	font-size: .9rem;
 	line-height: 1.4rem;
 	margin-bottom: 50px;
+
+	@include breakpoint(medium) {
+
+		font-size: .7rem;
+
+	}
 
 }
 
@@ -579,6 +608,13 @@ nav {
 		bottom:25%;
 		bottom: 25vh;
 
+		@include breakpoint(medium) {
+
+			bottom:8%;
+			bottom: 8vh;
+
+		}
+
 	}	
 
 	&.darker {
@@ -607,6 +643,12 @@ nav {
 	margin-bottom: 10px;
 	line-height: 2rem;
 
+	@include breakpoint(medium) {
+
+		font-size: 1.7rem;
+
+	}
+
 }
 
 .photo-caption-description {
@@ -629,6 +671,12 @@ nav {
 
 	}
 
+	@include breakpoint(medium) {
+
+		width:100%;
+
+	}
+
 }
 
 .machine-photo-diagram {
@@ -636,6 +684,13 @@ nav {
 	height:12%;
 	height:12vh;
 	float:left;
+
+	@include breakpoint(medium) {
+
+		height:10%;
+		height:10vh;
+
+	}
 
 }
 
@@ -645,6 +700,13 @@ nav {
 	float:left;
 	margin-left: 20px;
 
+	@include breakpoint(medium) {
+
+		width:100%;
+		margin-left: 0;
+
+	}
+
 }
 
 .machine-photo-title {
@@ -652,6 +714,8 @@ nav {
 	@extend .photo-caption-title;
 	margin-bottom: 3px;
 	margin-top: 7px;
+
+
 
 }
 
@@ -915,14 +979,29 @@ nav {
 
 	&:nth-child(2) {
 
-		// top:200px;
+		@include breakpoint(medium) {
+
+			display: none;
+
+		}
 
 	}
 
 	&:nth-child(3) {
 
-		// top:60px;
+		@include breakpoint(medium) {
 
+			display: none;
+
+		}
+
+	}
+
+	@include breakpoint(medium) {
+
+		width:100%;
+		padding-left: 15px;
+		float:none;
 
 	}
 
