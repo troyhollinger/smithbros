@@ -14,6 +14,13 @@ $gotham : 'Gotham-Book', 'Montserrat', 'Helvetica', Arial;
 	@include transform(translate(-50%,-50%));
 }
 
+@mixin uncenter {
+
+	position: static;
+	@include transform(translate(0,0));
+
+}
+
 @mixin stretch {
 	width:100%;
 	height:100%;
@@ -66,10 +73,13 @@ $gotham : 'Gotham-Book', 'Montserrat', 'Helvetica', Arial;
     	@media (max-width: 500px) { @content; }
 	}
 	@else if $point == medium {
-    	@media (max-width: 1250px) { @content; }
+    	@media (max-width: 900px) { @content; }
 	}
 	@else if $point == large {
     	@media (max-width: 1600px) { @content; }
+	}
+	@else if $point == xlarge {
+    	@media (max-width: 5000px) { @content; }
 	}
 	@else {
 		@media (max-width: $point) { @content; }
@@ -77,8 +87,60 @@ $gotham : 'Gotham-Book', 'Montserrat', 'Helvetica', Arial;
   
 }
 
+@mixin stretchpoint($point) {
+	@if $point == small {
+    	@media (min-width: 0px) { @content; }
+	}
+	@else if $point == medium {
+    	@media (min-width: 500px) { @content; }
+	}
+	@else if $point == large {
+    	@media (min-width: 900px) { @content; }
+	}
+	@else {
+		@media (min-width: $point) { @content; }
+	}
+  
+}
+
+body {
+
+	&:after {
+
+		display: none;
+
+		@include stretchpoint(small) {
+
+			content : 'small'
+
+		}
+
+		@include stretchpoint(medium) {
+
+			content : 'medium';
+
+		}
+
+		@include stretchpoint(large) {
+
+			content : 'large';
+
+		}		
+
+	}
+
+}
+
 @mixin change {
 	@include transition(all .15s ease);
+}
+
+.master-container {
+
+	width:100%;
+	position: relative;
+	height:auto;
+
 }
 
 .clear {
@@ -104,8 +166,18 @@ html {
 	background-color: $dark;
 	font-family: $gotham;
 	color:$dark;
+	font-size: 16px;
+
+	@include breakpoint(medium) {
+
+		font-size: 13px;
+
+	}
+
 
 }
+
+
 
 .logo {
 
@@ -117,6 +189,14 @@ html {
 	@include breakpoint(large) {
 
 		width:120px;
+
+	}
+
+	@include breakpoint(medium) {
+
+		position: fixed;
+		left:5%;
+		top:10px;
 
 	}
 
@@ -140,6 +220,14 @@ html {
 	height:auto;
 	overflow: auto;
 	margin: 0 auto;
+
+	@include breakpoint(medium) {
+
+		width:100%;
+		@include box-sizing(border-box);
+		padding:0 5%;
+
+	}
 	
 }
 
@@ -155,6 +243,12 @@ html {
 
 	.container {
 		padding-top: 5.5vh;
+
+	}
+
+	@include breakpoint(medium) {
+
+		display: none;
 
 	}
 
@@ -391,11 +485,43 @@ nav {
 
 }
 
+.photo-caption-mobile {
+
+	@include stretchpoint(medium) {
+
+		display: none;
+
+	}
+
+}
+
+.photo-caption-fixed {
+
+	bottom: 8%;
+	bottom: 8vh;
+
+	&.first-caption {
+
+		bottom:8%;
+		bottom: 8vh;
+
+	}	
+
+}
+
+.photo-caption-animated {
+
+	@include breakpoint(medium) {
+
+		display: none;
+
+	}
+
+}
+
 .photo-caption {
 
 	position: absolute;
-	// bottom: 8%;
-	// bottom: 8vh;
 	left: 10%;
 	font-family: $gotham;
 	color:white;
@@ -403,20 +529,30 @@ nav {
 	z-index: 7;
 
 
+	&.first-story-caption {
+		
+	}
+
 	&.first-caption {
 
 		bottom:25%;
 		bottom: 25vh;
 
-	}
-
-	&.first-story-caption {
-		
-	}
+	}	
 
 	&.darker {
 
 		color: black;
+
+	}
+
+	@include breakpoint(medium) {
+
+		width:100%;
+		left:0%;
+		@include box-sizing(border-box);
+		padding: 0 5%;
+
 
 	}
 
@@ -442,6 +578,8 @@ nav {
 .machine-photo-info-container {
 
 	@extend .photo-caption;
+	bottom: 8%;
+	bottom:8vh;
 	width:40%;
 
 	@include breakpoint(large) {
@@ -500,6 +638,12 @@ nav {
 
 	}
 
+	@include breakpoint(medium) {
+
+		height:auto;
+
+	}
+
 }
 
 .contact-fixed-container {
@@ -515,11 +659,34 @@ nav {
 
 		@include center;
 		top:48%;
+
+		@include breakpoint(medium) {
+
+			@include uncenter;
+
+		}
+
 	}
 
 	& > .contact-info-outer-container {
 
 		margin-top: 15vh;
+
+		@include breakpoint(medium) {
+
+			margin-top: 0;
+			@include box-sizing(border-box);
+			padding-top:40px;
+			padding-bottom: 40px;
+
+		}
+
+	}
+
+	@include breakpoint(medium) {
+
+		position: static;
+		height:auto;
 
 	}
 
@@ -589,9 +756,27 @@ nav {
 	height:20%;
 	height:20vh;
 
+
 	.container {
 
 		@include center;
+
+		@include breakpoint(medium) {
+
+			position: static;
+			@include transform(translate(0,0));
+
+		}
+
+	}
+
+	@include breakpoint(medium) {
+
+		height:auto;
+		position: static;
+		@include box-sizing(border-box);
+		padding:20px 0;
+
 
 	}
 
@@ -607,6 +792,15 @@ nav {
 	font-weight: bold;
 	text-transform: uppercase;
 	line-height: 1.8rem;
+
+	@include breakpoint(medium) {
+
+		float:none;
+		margin:10px 0;
+
+	}
+
+
 
 }
 
@@ -633,6 +827,12 @@ nav {
 		// width:100%;
 		float:right;
 
+		@include breakpoint(medium) {
+
+			float:none;
+
+		}
+
 	}
 
 	td {
@@ -644,6 +844,14 @@ nav {
 			padding-right: 10px;
 
 		}
+
+	}
+
+	@include breakpoint(medium) {
+
+		float:none;
+		text-align: left;
+		margin:10px 0;
 
 	}
 
@@ -927,6 +1135,12 @@ nav {
 
 	}
 
+	@include breakpoint(medium) {
+
+		width:100%;
+
+	}
+
 }
 
 .team-hover-trigger-container {
@@ -1127,6 +1341,24 @@ nav {
 	color:$light;
 
 }
+
+
+.pacific-photo-caption {
+
+	display: inline-block;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

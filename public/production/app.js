@@ -48,22 +48,93 @@ app.controller('LoginController', ['$scope', function($scope) {
 }]);
 
 
+var viewport = {
+
+	getIndicator : function() {
+
+		var bodyElement = $('body').get(0);
+		var indicator = window.getComputedStyle(bodyElement,':after').content;
+
+		return indicator;
+
+	},
+
+	is : {
+
+		small : function() {
+
+			var indicator = viewport.getIndicator();
+
+			if (indicator === 'small') {
+
+				return true;
+
+			} else {
+
+				return false;
+
+			}
+
+		},
+
+		medium : function() {
+
+			var indicator = viewport.getIndicator();
+
+			if (indicator === 'medium') {
+
+				return true;
+
+			} else {
+
+				return false;
+
+			}
+
+		},
+
+		large : function() {
+
+			var indicator = viewport.getIndicator();
+
+			if (indicator === 'large') {
+
+				return true;
+
+			} else {
+
+				return false;
+
+			}
+
+		}
+
+	}
+	
+}
 
 
 
 // Smooth scrolling to anchor tag
 $('a[href*=#]:not([href=#])').click(function() {
+
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
+
+		var target = $(this.hash);
+
+		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+		if (target.length) {
+
+			$('html,body').animate({ scrollTop: target.offset().top }, 1000);
+
+        	return false;
+
+		}
+
     }
-  });
+
+});
 
 var requestAnimationFrame = window.requestAnimationFrame || 
                             window.mozRequestAnimationFrame || 
@@ -143,6 +214,7 @@ var Mast = {
 	pageElements : $(".nav-page-elements"),
 
 	previousDistance : 0,
+
 	previousHeight : $(window).height() * 0.20,
 
 	fixState : function() {
@@ -174,7 +246,7 @@ var Mast = {
 		}
 		
 		if (distance > ($(window).height() - elementHeight)) {
-			// if 
+			
 			Mast.element.addClass('nav-fixed');
 
 		} else {
@@ -378,11 +450,6 @@ var Team = {
 
 }
 
-$.getDocHeight = function(){
-     var D = document;
-     return Math.max(Math.max(D.body.scrollHeight,D.documentElement.scrollHeight), Math.max(D.body.offsetHeight, D.documentElement.offsetHeight), Math.max(D.body.clientHeight, D.documentElement.clientHeight));
-};
-
 
 var Captions = {
 
@@ -394,7 +461,7 @@ var Captions = {
 
 	},
 
-	elements : $(".photo-caption"),
+	elements : $(".photo-caption-animated"),
 
 	setStartPosition : function() {
 
@@ -404,20 +471,15 @@ var Captions = {
 			var distance = 0;
 			var windowHeight = $(window).height();
 
-
 			if ($(this).hasClass('first-story-caption')) {
 
-				// distance = (($(window).height() * 0.75) * i) - $(this).height();
 				distance = (windowHeight * i) - ((windowHeight * 0.25) + $(this).height());
 
 			} else {
 
-				// distance = (($(window).height() * 0.9) * i) - $(this).height();
 				distance = (windowHeight * i) - ((windowHeight * 0.1) + $(this).height());
 
 			}
-
-			// console.log(windowHeight - 180);
 
 			$(this).css('top', distance + 'px').attr('data-top', distance);
 
@@ -433,50 +495,44 @@ var Captions = {
 
 			var height = $(this).height();
 			var nextTop = parseInt($(this).next().attr('data-top'));
-			var thisTop = parseInt($(this).css('top'));
 			var newTop = nextTop - height;
 			var defaultTop = $(this).attr('data-top');
+			var offset = 180;
 
-			// distance scrolled is past activation point
-			if ( distance > (defaultTop - 150) && distance < (nextTop) - (height + 150) ) {
-
-				$(this).css({position : 'fixed', top : '150px'});
-			// distance scrolled is past next elements activation point, fixate this element
-			} else if (distance > (nextTop) - (height + 150)) {
-
+			if (distance > (defaultTop - offset) && distance < (nextTop) - (height + offset)) {
+				// distance scrolled is past activation point
+				$(this).css({position : 'fixed', top : offset + 'px'});
+			
+			} else if (distance > (nextTop) - (height + offset)) {
+				// distance scrolled is past next elements activation point, fix this element
 				$(this).css({position : 'absolute', top : newTop + 'px' });
 
-			//
 			} else {
 
 				$(this).css({top : defaultTop + 'px', position : 'absolute' });
 
-
 			}
 
-			// console.log($(this).get(0).style.top);
-			// console.log(parseInt($(this).css('top')));
-
 		});
-
-		
 
 		requestAnimationFrame(Captions.push);
 
 	}
 
-
 }
-
 
 $(document).ready(function() {
 
-	Logo.init();
-	Mast.init();
-	Team.init();
-	Photos.init();
+	if (viewport.is.large()) {
 
-	if (thisPage === 'home') {
+		Photos.init();
+		Mast.init();
+		Logo.init();
+		Team.init();
+
+	}
+
+	if (thisPage === 'home' || thisPage === 'pacific.home' && viewport.is.large()) {
 
 		Captions.init();
 
@@ -500,11 +556,12 @@ $(window).resize(function() {
 
 	}
 
-	if (thisPage === 'home') {
+	if (thisPage === 'home' && viewport.is.large()) {
 
 		Captions.init();
 
 	}
+
 
 });
 
