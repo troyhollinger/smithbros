@@ -140,6 +140,14 @@ body {
 	width:100%;
 	position: relative;
 	height:auto;
+	@include transform(translate(0,0));
+	@include change;
+
+	&.shifted {
+
+		@include transform(translate(-70%, 0));
+
+	}
 
 }
 
@@ -1278,10 +1286,9 @@ nav {
 	position: relative;
 
 	.patty {
+
 		width:100%;
 		height:2px;
-		background-color: black;
-		// border-radius: 500px;
 		@include transition(all .15s ease);
 
 		&:first-child {
@@ -1302,6 +1309,34 @@ nav {
 		}
 
 	}	
+
+}
+
+.mobile-hamburger {
+
+	position: fixed;
+	top:20px;
+	right:20px;
+	width:30px;
+	height:20px;
+	z-index: 9;
+	cursor: pointer;
+
+	.patty {
+
+		background-color: $light;
+
+	}
+
+}
+
+.nav-hamburger {
+
+	.patty {
+
+		background-color: black;
+
+	}
 
 }
 

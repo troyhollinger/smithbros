@@ -521,6 +521,46 @@ var Captions = {
 
 }
 
+var MobileNav = {
+
+	init : function() {
+
+		MobileNav.hamburger.click(function() {
+
+			if ($(this).hasClass('open')) {
+
+				MobileNav.close();
+
+			} else if ($(this).hasClass('closed')) {
+
+				MobileNav.open();
+
+			}
+
+		});
+
+	},
+
+	hamburger : $("#mobile-hamburger"),
+
+	body : $("#master-container"),
+
+	open : function() {
+
+		MobileNav.body.addClass('shifted');
+		MobileNav.hamburger.addClass('open').removeClass('closed');
+
+	},
+
+	close : function() {
+
+		MobileNav.body.removeClass('shifted');
+		MobileNav.hamburger.addClass('closed').removeClass('open');
+
+	}
+
+}
+
 $(document).ready(function() {
 
 	if (viewport.is.large()) {
@@ -545,6 +585,8 @@ $(document).ready(function() {
 		Parts.init();
 
 	}
+
+	MobileNav.init();
 
 });
 

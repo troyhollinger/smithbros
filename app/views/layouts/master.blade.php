@@ -28,7 +28,7 @@
 
         @include ('partials.nav') 
 
-        <div class="master-container">
+        <div class="master-container" id="master-container">
 
             @yield('content')
 

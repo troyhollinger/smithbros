@@ -7,6 +7,14 @@
 <a href="{{ route('home') }}"><img class="logo" src="{{ asset('img/script-logo.png') }}"></a>
 @endif
 
+<div class="hamburger mobile-hamburger closed" id="mobile-hamburger">
+
+	<div class="patty"></div>
+	<div class="patty"></div>
+	<div class="patty"></div>
+
+</div>
+
 <div class="nav">
 
 	<div class="container">
@@ -36,7 +44,7 @@
 			<a href="#machine-list">
 				<div class="capabilities-title">
 			
-					<div class="hamburger">
+					<div class="hamburger nav-hamburger">
 					    <div class="patty"></div>
 					    <div class="patty"></div>
 					    <div class="patty"></div>
