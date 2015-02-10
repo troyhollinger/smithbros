@@ -10,7 +10,7 @@
             @yield('title')
         </title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <link rel="stylesheet" href="{{ asset('production/app.css') }}"> 
         <script src="{{ asset('js/vendor/modernizr-2.6.2.min.js') }}"></script>
         <script>
