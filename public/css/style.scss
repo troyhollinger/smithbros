@@ -141,11 +141,17 @@ body {
 	position: relative;
 	height:auto;
 	@include transform(translate(0,0));
-	@include transition(all .5s ease);
+	@include transition(all .35s ease);
 
 	&.shifted {
 
 		@include transform(translate(-70%, 0));
+
+	}
+
+	@include breakpoint(medium) {
+
+		z-index: 2;
 
 	}
 
@@ -256,7 +262,13 @@ html {
 
 	@include breakpoint(medium) {
 
-		display: none;
+		position: fixed;
+		z-index: 1;
+		height:auto;
+		background-color: transparent;
+		width:65%;
+		right:0;
+		top:40px;
 
 	}
 
@@ -313,6 +325,12 @@ nav {
 
 			}
 
+			@include breakpoint(medium) {
+
+				display: none;
+
+			}
+
 		}
 
 		&:hover {
@@ -330,6 +348,15 @@ nav {
 		@include breakpoint(large) {
 
 			font-size: .9rem;
+
+		}
+
+		@include breakpoint(medium) {
+
+			float:none;
+			font-size: 1.4rem;
+			margin-bottom: 10px;
+			white-space: nowrap;
 
 		}
 	
@@ -362,6 +389,12 @@ nav {
 	ul {
 
 		overflow: auto;
+
+	}
+
+	@include breakpoint(medium) {
+
+		float:none;
 
 	}
 
@@ -1269,8 +1302,11 @@ nav {
 
 	}
 
+	@include breakpoint(medium) {
 
-	
+		display: none;
+
+	}
 	
 }
 
@@ -1325,6 +1361,34 @@ nav {
 	.patty {
 
 		background-color: $light;
+
+	}
+
+	&.open {
+
+		.patty {
+
+			&:first-child {
+
+				@include transform(translate(0, 9px) rotate(45deg));
+				background-color:black;
+
+			}
+
+			&:nth-child(2) {
+
+				opacity: 0;
+
+			}
+
+			&:last-child {
+
+				@include transform(translate(0, -9px) rotate(-45deg));
+				background-color:black;
+
+			}
+
+		}
 
 	}
 
