@@ -3,6 +3,7 @@
 // Variables
 $dark : #2a2b2b;
 $light : #acafae;
+$gray : #e7e9ea;
 $gotham : 'Gotham-Book', 'Montserrat', 'Helvetica', Arial;
 
 
@@ -103,6 +104,8 @@ $gotham : 'Gotham-Book', 'Montserrat', 'Helvetica', Arial;
   
 }
 
+
+
 body {
 
 	&:after {
@@ -129,6 +132,8 @@ body {
 
 	}
 
+	background-color: $gray;
+
 }
 
 @mixin change {
@@ -140,18 +145,17 @@ body {
 	width:100%;
 	position: relative;
 	height:auto;
-	@include transform(translate(0,0));
-	@include transition(all .35s ease);
-
-	&.shifted {
-
-		@include transform(translate(-70%, 0));
-
-	}
-
+	z-index: 9;
 	@include breakpoint(medium) {
 
-		z-index: 2;
+		@include transform(translate(0,0));
+		@include transition(all .35s ease);
+
+		&.shifted {
+
+			@include transform(translate(-70%, 0));
+
+		}
 
 	}
 
@@ -251,7 +255,7 @@ html {
 	bottom: 0;
 	width:100%;
 	height:20vh;
-	z-index: 9;
+	z-index: 8;
 	background-color: rgba(255,255,255,0.8);
 	@include transition(all .25s ease);
 
@@ -265,10 +269,12 @@ html {
 		position: fixed;
 		z-index: 1;
 		height:auto;
-		background-color: transparent;
+		background-color: $gray;
 		width:65%;
 		right:0;
-		top:40px;
+		// top:40px;
+		// width:100%;
+		height:100%;
 
 	}
 
@@ -395,6 +401,7 @@ nav {
 	@include breakpoint(medium) {
 
 		float:none;
+		margin-top: 40px;
 
 	}
 
@@ -1013,6 +1020,18 @@ nav {
 
 	width:16.6666%;
 
+	@include breakpoint(medium) {
+
+		width:100%;
+
+		/* Show first and second column at medium screen sizes and smaller */
+		&:not(:first-child):not(:nth-child(2)) {
+
+			display: none;
+
+		}		
+	}
+
 }
 
 
@@ -1037,6 +1056,12 @@ nav {
 	color:$light;
 	font-size: .7rem;
 	width:90%;
+
+	@include breakpoint(medium) {
+
+		font-size: .8rem;
+
+	}
 
 }
 
@@ -1077,6 +1102,12 @@ nav {
 
 	}
 
+	@include breakpoint(medium) {
+
+		height:auto;
+
+	}
+
 }
 
 .vendor-info {
@@ -1091,6 +1122,14 @@ nav {
 
 		font-size: 1.5rem;
 		line-height: 1.5rem;
+
+	}
+
+	@include breakpoint(medium) {
+
+		width:100%;
+		float:none;
+		margin-top: 20px;
 
 	}
 
@@ -1124,6 +1163,13 @@ nav {
 		background-color: white;
 		color:$dark;
 		border:none;
+
+	}
+
+	@include breakpoint(small) {
+
+		width:160px;
+		height:40px;
 
 	}
 
@@ -1179,6 +1225,20 @@ nav {
 
 	}
 
+	@include breakpoint(medium) {
+
+		width:100%;
+		float:none;
+		margin: 50px 0;
+
+		.sign-in-button {
+
+			text-align: left;
+
+		}
+
+	}
+
 
 }
 
@@ -1187,6 +1247,13 @@ nav {
 	float:right;
 	position: relative;
 	width:33%;
+
+	@include breakpoint(medium) {
+
+		width:100%;
+		margin:50px 0;
+
+	}
 
 }
 
@@ -1393,6 +1460,12 @@ nav {
 
 	float:right;
 
+	@include breakpoint(medium) {
+
+		display: none;
+
+	}
+
 }
 
 .hamburger {
@@ -1434,7 +1507,7 @@ nav {
 	right:20px;
 	width:30px;
 	height:20px;
-	z-index: 9;
+	z-index: 10;
 	cursor: pointer;
 
 	.patty {
