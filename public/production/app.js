@@ -616,6 +616,15 @@ $(document).ready(function() {
 
 	MobileNav.init();
 
+	$(".data-img").dataImg({
+
+		sml : 500,
+		med : 900,
+		lrg : 1200,
+		resize : true
+
+	});
+
 });
 
 $(window).resize(function() {

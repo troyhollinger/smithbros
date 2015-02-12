@@ -16,7 +16,7 @@
 
 			<div class="team-container">
 
-				<img id="team-image" src="{{ asset('img/team/team-default.jpg') }}" data-default="{{ asset('img/team/team-default.jpg') }}">	
+				<img id="team-image" class="data-img" src="http://placehold.it/1x1" data-sml="{{ asset('img/team/team-default-m.jpg') }}" data-med="{{ asset('img/team/team-default-m.jpg') }}" data-lrg="{{ asset('img/team/team-default.jpg') }}" data-default="{{ asset('img/team/team-default.jpg') }}">	
 
 				<div class="team-hover-trigger-container">
 
