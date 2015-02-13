@@ -612,6 +612,8 @@ $(document).ready(function() {
 		if (!isSafari && !isExplorer) {
 			Photos.init();
 			Logo.init();
+
+			console.log('is not internet explorer or safari');
 		}
 		
 		Mast.init();
