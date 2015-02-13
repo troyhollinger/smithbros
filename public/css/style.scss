@@ -1567,6 +1567,12 @@ nav {
 
 	}
 
+	@include stretchpoint(medium) {
+
+		display: none;
+
+	}
+
 }
 
 .nav-hamburger {

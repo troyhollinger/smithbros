@@ -31,6 +31,13 @@ function isTouchDevice() {
 
 }
 
+var isChrome = navigator.userAgent.indexOf('Chrome') > -1;
+var isExplorer = navigator.userAgent.indexOf('MSIE') > -1;
+var isFirefox = navigator.userAgent.indexOf('Firefox') > -1;
+var isSafari = navigator.userAgent.indexOf("Safari") > -1;
+var isOpera = navigator.userAgent.indexOf("Presto") > -1;
+if ((isChrome)&&(isSafari)) { isSafari = false; }
+
 if (thisPage === 'vendors') {
 
 	var app = angular.module('vendor', []);
@@ -63,7 +70,10 @@ var viewport = {
 	getIndicator : function() {
 
 		var bodyElement = $('body').get(0);
-		var indicator = window.getComputedStyle(bodyElement,':after').content;
+		var indicatorString = window.getComputedStyle(bodyElement,':after').content;
+
+		// Firefox keeps quotation marks in string, remove them here.
+		var indicator = indicatorString.replace(/"/g, "");
 
 		return indicator;
 
@@ -75,7 +85,7 @@ var viewport = {
 
 			var indicator = viewport.getIndicator();
 
-			if (indicator === 'small') {
+			if (indicator == 'small') {
 
 				return true;
 
@@ -91,7 +101,7 @@ var viewport = {
 
 			var indicator = viewport.getIndicator();
 
-			if (indicator === 'medium') {
+			if (indicator == 'medium') {
 
 				return true;
 
@@ -107,12 +117,12 @@ var viewport = {
 
 			var indicator = viewport.getIndicator();
 
-			if (indicator === 'large') {
-
+			if (indicator == 'large') {
+				
 				return true;
 
 			} else {
-
+				
 				return false;
 
 			}
@@ -122,7 +132,6 @@ var viewport = {
 	}
 	
 }
-
 
 
 // Smooth scrolling to anchor tag
@@ -149,7 +158,10 @@ $('a[href*=#]:not([href=#])').click(function() {
 var requestAnimationFrame = window.requestAnimationFrame || 
                             window.mozRequestAnimationFrame || 
                             window.webkitRequestAnimationFrame ||
-                            window.msRequestAnimationFrame;
+                            window.msRequestAnimationFrame ||
+                            function( callback ){
+	            				window.setTimeout(callback, 1000 / 60);
+          					};
 
 
 function mobile() {
@@ -597,9 +609,13 @@ $(document).ready(function() {
 
 	if (viewport.is.large()) {
 
-		Photos.init();
+		if (!isSafari) {
+			Photos.init();
+			Logo.init();
+		}
+		
 		Mast.init();
-		Logo.init();
+		
 		Team.init();
 
 	}
