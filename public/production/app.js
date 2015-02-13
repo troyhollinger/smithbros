@@ -32,7 +32,7 @@ function isTouchDevice() {
 }
 
 var isChrome = navigator.userAgent.indexOf('Chrome') > -1;
-var isExplorer = navigator.userAgent.indexOf('MSIE') > -1;
+var isExplorer = navigator.userAgent.indexOf('MSIE') > -1 || navigator.userAgent.indexOf('rv:11.0') > -1;
 var isFirefox = navigator.userAgent.indexOf('Firefox') > -1;
 var isSafari = navigator.userAgent.indexOf("Safari") > -1;
 var isOpera = navigator.userAgent.indexOf("Presto") > -1;
