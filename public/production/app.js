@@ -609,7 +609,7 @@ $(document).ready(function() {
 
 	if (viewport.is.large()) {
 
-		if (!isSafari) {
+		if (!isSafari && !isExplorer) {
 			Photos.init();
 			Logo.init();
 		}
