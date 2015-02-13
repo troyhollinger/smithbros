@@ -1205,6 +1205,7 @@ nav {
 		border:none;
 		border-bottom: 1px solid white;
 		color:white;
+		border-radius: 0;
 
 		&:focus {
 
@@ -1242,6 +1243,7 @@ nav {
 	input[type="submit"] {
 
 		margin-top: 60px;
+		border-radius: 0;
 
 
 	}

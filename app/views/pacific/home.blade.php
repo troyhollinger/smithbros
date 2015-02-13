@@ -10,7 +10,7 @@ Pacific Welding
 
 <div class="photo-container">
 
-	<div class="photo" data-speed="2" style="background-image:url({{ asset('img/pacific-1.jpg') }}); background-position:bottom;"></div>
+	<div class="photo data-img" data-speed="2" data-sml="{{ asset('img/pacific-1-m.jpg') }}" data-med="{{ asset('img/pacific-1-m.jpg') }}" data-lrg="{{ asset('img/pacific-1.jpg') }}" style="background-image:url(http://placeholder.it/1x1); background-position:bottom;"></div>
 
 </div>	
 
@@ -25,7 +25,7 @@ Pacific Welding
 
 				<div class="parts-image-container long-parts-image-container">
 					<div class="long-parts-image-container parts-image-centerer">
-						<img class="parts-image" src="{{ asset('img/parts/pacific-parts-1.jpg') }}" data-zoom="1.2"></img>
+						<img class="parts-image data-img" src="{{ asset('img/parts/pacific-parts-1.jpg') }}" data-zoom="1.2"></img>
 					</div>
 					<div class="parts-image-caption">
 						<p class="bold">STRAIGHT SHANKS</p>
@@ -34,7 +34,7 @@ Pacific Welding
 				</div>
 				<div class="parts-image-container short-parts-image-container">
 					<div class="long-parts-image-container parts-image-centerer">
-						<img class="parts-image" src="{{ asset('img/parts/pacific-parts-7.jpg') }}" data-zoom="1.2"></img>
+						<img class="parts-image data-img" src="{{ asset('img/parts/pacific-parts-7.jpg') }}" data-zoom="1.2"></img>
 					</div>
 					<div class="parts-image-caption">
 						<p class="bold">INSERT ELECTRODES</p>
@@ -43,7 +43,7 @@ Pacific Welding
 				</div>
 				<div class="parts-image-container long-parts-image-container">
 					<div class="long-parts-image-container parts-image-centerer">
-						<img class="parts-image" src="{{ asset('img/parts/pacific-parts-13.jpg') }}" data-zoom="1.2"></img>
+						<img class="parts-image data-img" src="{{ asset('img/parts/pacific-parts-13.jpg') }}" data-zoom="1.2"></img>
 					</div>
 					<div class="parts-image-caption">
 						<p class="bold">BACKUP INSERTS</p>
@@ -66,7 +66,7 @@ Pacific Welding
 
 				<div class="parts-image-container short-parts-image-container">
 					<div class="long-parts-image-container parts-image-centerer">
-						<img class="parts-image" src="{{ asset('img/parts/pacific-parts-2.jpg') }}" data-zoom="1.2"></img>
+						<img class="parts-image data-img" data-sml="http://placeholder.it/1x1" data-med="http://placeholder.it/1x1" data-lrg="{{ asset('img/parts/pacific-parts-2.jpg') }}" src="http://placeholder.it/1x1" data-zoom="1.2"></img>
 					</div>
 					<div class="parts-image-caption">
 						<p class="bold">INSERT ELECTRODES</p>
@@ -75,7 +75,7 @@ Pacific Welding
 				</div>
 				<div class="parts-image-container long-parts-image-container">
 					<div class="long-parts-image-container parts-image-centerer">
-						<img class="parts-image" src="{{ asset('img/parts/pacific-parts-8.jpg') }}" data-zoom="1.2"></img>
+						<img class="parts-image data-img" data-sml="http://placeholder.it/1x1" data-med="http://placeholder.it/1x1" data-lrg="{{ asset('img/parts/pacific-parts-8.jpg') }}" src="http://placeholder.it/1x1" data-zoom="1.2"></img>
 					</div>
 					<div class="parts-image-caption">
 						<p class="bold">DOUBLE BEND SHANKS</p>
@@ -117,7 +117,7 @@ Pacific Welding
 				</div>
 				<div class="parts-image-container short-parts-image-container">
 					<div class="long-parts-image-container parts-image-centerer">
-						<img class="parts-image" src="{{ asset('img/parts/pacific-parts-9.jpg') }}" data-zoom="1.2"></img>
+						<img class="parts-image data-img" data-sml="http://placeholder.it/1x1" data-med="http://placeholder.it/1x1" data-lrg="{{ asset('img/parts/pacific-parts-9.jpg') }}" src="http://placeholder.it/1x1" data-zoom="1.2"></img>
 					</div>
 					<div class="parts-image-caption">
 						<p class="bold">INSERT ELECTRODES</p>
@@ -126,7 +126,7 @@ Pacific Welding
 				</div>
 				<div class="parts-image-container long-parts-image-container">
 					<div class="long-parts-image-container parts-image-centerer">
-						<img class="parts-image" src="{{ asset('img/parts/pacific-parts-15.jpg') }}" data-zoom="1.2"></img>
+						<img class="parts-image data-img" data-sml="http://placeholder.it/1x1" data-med="http://placeholder.it/1x1" data-lrg="{{ asset('img/parts/pacific-parts-15.jpg') }}" src="http://placeholder.it/1x1" data-zoom="1.2"></img>
 					</div>
 					<div class="parts-image-caption">
 						<p class="bold">DOUBLE BEND ELECTRODES</p>
@@ -135,7 +135,7 @@ Pacific Welding
 				</div>
 				<div class="parts-image-container short-parts-image-container">
 					<div class="long-parts-image-container parts-image-centerer">
-						<img class="parts-image" src="{{ asset('img/parts/pacific-parts-21.jpg') }}" data-zoom="1.2"></img>
+						<img class="parts-image data-img" data-sml="http://placeholder.it/1x1" data-med="http://placeholder.it/1x1" data-lrg="{{ asset('img/parts/pacific-parts-21.jpg') }}" src="http://placeholder.it/1x1" data-zoom="1.2"></img>
 					</div>
 					<div class="parts-image-caption">
 						<p class="bold">BACKUP ELECTRODES</p>
@@ -150,7 +150,7 @@ Pacific Welding
 
 				<div class="parts-image-container short-parts-image-container">
 					<div class="long-parts-image-container parts-image-centerer">
-						<img class="parts-image" src="{{ asset('img/parts/pacific-parts-4.jpg') }}" data-zoom="1.2"></img>
+						<img class="parts-image data-img" data-sml="http://placeholder.it/1x1" data-med="http://placeholder.it/1x1" data-lrg="{{ asset('img/parts/pacific-parts-4.jpg') }}" src="http://placeholder.it/1x1" data-zoom="1.2"></img>
 					</div>
 					<div class="parts-image-caption">
 						<p class="bold">TAPERED NOSE SHANKS</p>
@@ -159,7 +159,7 @@ Pacific Welding
 				</div>
 				<div class="parts-image-container long-parts-image-container">
 					<div class="long-parts-image-container parts-image-centerer">
-						<img class="parts-image" src="{{ asset('img/parts/pacific-parts-10.jpg') }}" data-zoom="1.2"></img>
+						<img class="parts-image data-img" data-sml="http://placeholder.it/1x1" data-med="http://placeholder.it/1x1" data-lrg="{{ asset('img/parts/pacific-parts-10.jpg') }}" src="http://placeholder.it/1x1" data-zoom="1.2"></img>
 					</div>
 					<div class="parts-image-caption">
 						<p class="bold">INSERT ELECTRODES</p>
@@ -192,7 +192,7 @@ Pacific Welding
 
 				<div class="parts-image-container long-parts-image-container">
 					<div class="long-parts-image-container parts-image-centerer">
-						<img class="parts-image" src="{{ asset('img/parts/pacific-parts-5.jpg') }}" data-zoom="1.2"></img>
+						<img class="parts-image data-img" data-sml="http://placeholder.it/1x1" data-med="http://placeholder.it/1x1" data-lrg="{{ asset('img/parts/pacific-parts-5.jpg') }}" src="http://placeholder.it/1x1" data-zoom="1.2"></img>
 					</div>
 					<div class="parts-image-caption">
 						<p class="bold">OFFSET SHANKS</p>
@@ -201,7 +201,7 @@ Pacific Welding
 				</div>
 				<div class="parts-image-container short-parts-image-container">
 					<div class="long-parts-image-container parts-image-centerer">
-						<img class="parts-image" src="{{ asset('img/parts/pacific-parts-11.jpg') }}" data-zoom="1.2"></img>
+						<img class="parts-image data-img" data-sml="http://placeholder.it/1x1" data-med="http://placeholder.it/1x1" data-lrg="{{ asset('img/parts/pacific-parts-11.jpg') }}" src="http://placeholder.it/1x1" data-zoom="1.2"></img>
 					</div>
 					<div class="parts-image-caption">
 						<p class="bold">INSERT ELECTRODES</p>
@@ -243,7 +243,7 @@ Pacific Welding
 				</div>
 				<div class="parts-image-container long-parts-image-container">
 					<div class="long-parts-image-container parts-image-centerer">
-						<img class="parts-image" src="{{ asset('img/parts/pacific-parts-12.jpg') }}" data-zoom="1.2"></img>
+						<img class="parts-image data-img" data-sml="http://placeholder.it/1x1" data-med="http://placeholder.it/1x1" data-lrg="{{ asset('img/parts/pacific-parts-12.jpg') }}" src="http://placeholder.it/1x1" data-zoom="1.2"></img>
 					</div>
 					<div class="parts-image-caption">
 						<p class="bold">MORSE TAPER ADAPTERS</p>
@@ -261,7 +261,7 @@ Pacific Welding
 				</div>
 				<div class="parts-image-container long-parts-image-container">
 					<div class="long-parts-image-container parts-image-centerer">
-						<img class="parts-image" src="{{ asset('img/parts/pacific-parts-24.jpg') }}" data-zoom="1.2"></img>
+						<img class="parts-image data-img" data-sml="http://placeholder.it/1x1" data-med="http://placeholder.it/1x1" data-lrg="{{ asset('img/parts/pacific-parts-24.jpg') }}" src="http://placeholder.it/1x1" data-zoom="1.2"></img>
 					</div>
 					<div class="parts-image-caption">
 						<p class="bold">THREADED MORSE</p>
@@ -289,7 +289,7 @@ Pacific Welding
 
 	</div>
 
-	<div class="photo" data-speed="2" style="background-image:url({{ asset('img/pacific-2.jpg') }}); background-position:bottom;"></div>
+	<div class="photo data-img" data-speed="2" data-sml="{{ asset('img/pacific-2-m.jpg') }}" data-med="{{ asset('img/pacific-2-m.jpg') }}" data-lrg="{{ asset('img/pacific-2.jpg') }}" style="background-image:url(http://placeholder.it/1x1); background-position:bottom;"></div>
 
 </div>
 
@@ -302,7 +302,7 @@ Pacific Welding
 
 	</div>
 
-	<div class="photo" data-speed="2" style="background-image:url({{ asset('img/pacific-3.jpg') }}); background-position:bottom;"></div>
+	<div class="photo data-img" data-speed="2" data-sml="{{ asset('img/pacific-3-m.jpg') }}" data-med="{{ asset('img/pacific-3-m.jpg') }}" data-lrg="{{ asset('img/pacific-3.jpg') }}" style="background-image:url(http://placeholder.it/1x1); background-position:bottom;"></div>
 	
 </div>
 

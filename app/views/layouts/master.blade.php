@@ -40,7 +40,9 @@
        
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="{{ asset("js/vendor/jquery-1.10.2.min.js") }}"><\/script>')</script>
+        @if(Route::currentRouteName() === 'vendors')
         <script src="{{ asset('bower_components/angular/angular.min.js') }}"></script>
+        @endif
         <script src="{{ asset('bower_components/DataImg/data-img.min.js') }}"></script>
         <script src="{{ asset('production/app.min.js') }}"></script>
         <script>

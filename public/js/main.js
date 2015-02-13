@@ -6,27 +6,31 @@ function isTouchDevice() {
 
 }
 
-var app = angular.module('vendor', []);
+if (thisPage === 'vendors') {
 
-app.controller('LoginController', ['$scope', function($scope) {
+	var app = angular.module('vendor', []);
 
-	$scope.filledIn = false;
+	app.controller('LoginController', ['$scope', function($scope) {
 
-	$scope.checkForCompletion = function() {
+		$scope.filledIn = false;
 
-		if ($scope.email && $scope.password) {
+		$scope.checkForCompletion = function() {
 
-			$scope.filledIn = true;
+			if ($scope.email && $scope.password) {
 
-		} else {
+				$scope.filledIn = true;
 
-			$scope.filledIn = false;			
+			} else {
+
+				$scope.filledIn = false;			
+
+			}
 
 		}
 
-	}
+	}]);
 
-}]);
+}
 
 
 var viewport = {

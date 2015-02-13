@@ -10,7 +10,7 @@ Capabilities - Smith Brothers Manufacturing
 
 <div class="photo-container">
 
-	<div class="photo" data-speed="2" style="background-image:url({{ asset('img/capabilities-1.jpg') }})"></div>
+	<div class="photo data-img" data-speed="2" style="background-image:url(http://placehold.it/1x1)" data-sml="{{ asset('img/capabilities-1-m.jpg') }}" data-med="{{ asset('img/capabilities-1-m.jpg') }}" data-lrg="{{ asset('img/capabilities-1.jpg') }}"></div>
 
 	<div class="machine-photo-info-container first-caption">
 		<img class="machine-photo-diagram"  src="{{ asset('img/machines/machine-1.png') }}">
@@ -84,42 +84,42 @@ Capabilities - Smith Brothers Manufacturing
 				<div class="parts-images-column" data-offset="37">
 					<div class="parts-image-container short-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
-							<img class="parts-image" src="{{ asset('img/parts/parts-2.jpg') }}" data-zoom="1.2"></img>
+							<img class="parts-image data-img" src="http://placehold.it/1x1" data-sml="http://placehold.it/1x1" data-med="http://placehold.it/1x1" data-lrg="{{ asset('img/parts/parts-2.jpg') }}" data-zoom="1.2"></img>
 						</div>
 						<div class="parts-image-caption"><p>GANESH CNC CS-32</p></div>
 					</div>
 
 					<div class="parts-image-container long-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
-							<img class="parts-image" src="{{ asset('img/parts/parts-5.jpg') }}" data-zoom="1.05"></img>
+							<img class="parts-image data-img" src="http://placehold.it/1x1" data-sml="http://placehold.it/1x1" data-med="http://placehold.it/1x1" data-lrg="{{ asset('img/parts/parts-5.jpg') }}" data-zoom="1.05"></img>
 						</div>
 						<div class="parts-image-caption"><p>GANESH CNC 70MM-TTMY</p></div>
 					</div>
 
 					<div class="parts-image-container short-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
-							<img class="parts-image" src="{{ asset('img/parts/parts-8.jpg') }}" data-zoom="1.2"></img>
+							<img class="parts-image data-img" src="http://placehold.it/1x1" data-sml="http://placehold.it/1x1" data-med="http://placehold.it/1x1" data-lrg="{{ asset('img/parts/parts-8.jpg') }}" data-zoom="1.2"></img>
 						</div>
 						<div class="parts-image-caption"><p>GANESH CNC CS-32</p></div>
 					</div>
 
 					<div class="parts-image-container long-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
-							<img class="parts-image" src="{{ asset('img/parts/parts-11.jpg') }}" data-zoom="1.2"></img>
+							<img class="parts-image data-img" src="http://placehold.it/1x1" data-sml="http://placehold.it/1x1" data-med="http://placehold.it/1x1" data-lrg="{{ asset('img/parts/parts-11.jpg') }}" data-zoom="1.2"></img>
 						</div>
 						<div class="parts-image-caption"><p>GANESH CNC CS-32</p></div>
 					</div>
 
 					<div class="parts-image-container short-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
-							<img class="parts-image" src="{{ asset('img/parts/parts-14.jpg') }}" data-zoom="2"></img>
+							<img class="parts-image data-img" src="http://placehold.it/1x1" data-sml="http://placehold.it/1x1" data-med="http://placehold.it/1x1" data-lrg="{{ asset('img/parts/parts-14.jpg') }}" data-zoom="2"></img>
 						</div>
 						<div class="parts-image-caption"><p>CONOMATIC 11/16”</p></div>
 					</div>
 
 					<div class="parts-image-container long-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
-							<img class="parts-image" src="{{ asset('img/parts/parts-17.jpg') }}" data-zoom="1.2"></img>
+							<img class="parts-image data-img" src="http://placehold.it/1x1" data-sml="http://placehold.it/1x1" data-med="http://placehold.it/1x1" data-lrg="{{ asset('img/parts/parts-17.jpg') }}" data-zoom="1.2"></img>
 						</div>
 						<div class="parts-image-caption"><p>HASS CNC VF2</p></div>
 					</div>
@@ -129,42 +129,42 @@ Capabilities - Smith Brothers Manufacturing
 				<div class="parts-images-column" data-offset="15">
 					<div class="parts-image-container long-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
-							<img class="parts-image" src="{{ asset('img/parts/parts-3.jpg') }}" data-zoom="1.2"></img>
+							<img class="parts-image data-img" src="http://placehold.it/1x1" data-sml="http://placehold.it/1x1" data-med="http://placehold.it/1x1" data-lrg="{{ asset('img/parts/parts-3.jpg') }}" data-zoom="1.2"></img>
 						</div>
 						<div class="parts-image-caption"><p>GANESH CNC 70MM-TTMY</p></div>
 					</div>
 
 					<div class="parts-image-container short-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
-							<img class="parts-image" src="{{ asset('img/parts/parts-6.jpg') }}" data-zoom="1.2"></img>
+							<img class="parts-image data-img" src="http://placehold.it/1x1" data-sml="http://placehold.it/1x1" data-med="http://placehold.it/1x1" data-lrg="{{ asset('img/parts/parts-6.jpg') }}" data-zoom="1.2"></img>
 						</div>
 						<div class="parts-image-caption"><p>HASS CNC VF2</p></div>
 					</div>
 
 					<div class="parts-image-container long-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
-							<img class="parts-image" src="{{ asset('img/parts/parts-9.jpg') }}" data-zoom="1.5"></img>
+							<img class="parts-image data-img" src="http://placehold.it/1x1" data-sml="http://placehold.it/1x1" data-med="http://placehold.it/1x1" data-lrg="{{ asset('img/parts/parts-9.jpg') }}" data-zoom="1.5"></img>
 						</div>
 						<div class="parts-image-caption"><p>SERVO CAM 3/4”</p></div>
 					</div>
 
 					<div class="parts-image-container short-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
-							<img class="parts-image" src="{{ asset('img/parts/parts-12.jpg') }}" data-zoom="1.2"></img>
+							<img class="parts-image data-img" src="http://placehold.it/1x1" data-sml="http://placehold.it/1x1" data-med="http://placehold.it/1x1" data-lrg="{{ asset('img/parts/parts-12.jpg') }}" data-zoom="1.2"></img>
 						</div>
 						<div class="parts-image-caption"><p>CONOMATIC 1-3/4”</p></div>
 					</div>
 
 					<div class="parts-image-container long-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
-							<img class="parts-image" src="{{ asset('img/parts/parts-15.jpg') }}" data-zoom="1.2"></img>
+							<img class="parts-image data-img" src="http://placehold.it/1x1" data-sml="http://placehold.it/1x1" data-med="http://placehold.it/1x1" data-lrg="{{ asset('img/parts/parts-15.jpg') }}" data-zoom="1.2"></img>
 						</div>
 						<div class="parts-image-caption"><p>HASS CNC VF2</p></div>
 					</div>
 
 					<div class="parts-image-container short-parts-image-container">
 						<div class="long-parts-image-container parts-image-centerer">
-							<img class="parts-image" src="{{ asset('img/parts/parts-18.jpg') }}" data-zoom="1.2"></img>
+							<img class="parts-image data-img" src="http://placehold.it/1x1" data-sml="http://placehold.it/1x1" data-med="http://placehold.it/1x1" data-lrg="{{ asset('img/parts/parts-18.jpg') }}" data-zoom="1.2"></img>
 						</div>
 						<div class="parts-image-caption"><p>CONOMATIC 11/16”</p></div>
 					</div>
@@ -405,7 +405,7 @@ Capabilities - Smith Brothers Manufacturing
 
 <div class="photo-container">
 
-	<div class="photo" data-speed="2" style="background-image:url({{ asset('img/capabilities-2.jpg') }})"></div>
+	<div class="photo data-img" data-speed="2" style="background-image:url(http://placehold.it/1x1)" data-sml="{{ asset('img/capabilities-2-m.jpg') }}" data-med="{{ asset('img/capabilities-2-m.jpg') }}" data-lrg="{{ asset('img/capabilities-2.jpg') }}"></div>
 
 	<div class="machine-photo-info-container">
 		<img class="machine-photo-diagram"  src="{{ asset('img/machines/machine-2.png') }}">
@@ -423,7 +423,7 @@ Capabilities - Smith Brothers Manufacturing
 
 <div class="photo-container">
 
-	<div class="photo photo-bottom" data-speed="2" style="background-image:url({{ asset('img/capabilities-3.jpg') }})"></div>
+	<div class="photo photo-bottom data-img" data-speed="2" style="background-image:url(http://placehold.it/1x1)" data-sml="{{ asset('img/capabilities-3-m.jpg') }}" data-med="{{ asset('img/capabilities-3-m.jpg') }}" data-lrg="{{ asset('img/capabilities-3.jpg') }}"></div>
 
 	<div class="machine-photo-info-container">
 		<img class="machine-photo-diagram"  src="{{ asset('img/machines/machine-3.png') }}">
@@ -441,7 +441,7 @@ Capabilities - Smith Brothers Manufacturing
 
 <div class="photo-container">
 
-	<div class="photo" data-speed="2" style="background-image:url({{ asset('img/capabilities-4.jpg') }})"></div>
+	<div class="photo data-img" data-speed="2" style="background-image:url(http://placehold.it/1x1)" data-sml="{{ asset('img/capabilities-4-m.jpg') }}" data-med="{{ asset('img/capabilities-4-m.jpg') }}" data-lrg="{{ asset('img/capabilities-4.jpg') }}"></div>
 
 	<div class="machine-photo-info-container">
 		<img class="machine-photo-diagram"  src="{{ asset('img/machines/machine-4.png') }}">
@@ -459,7 +459,7 @@ Capabilities - Smith Brothers Manufacturing
 
 <div class="photo-container">
 
-	<div class="photo" data-speed="2" style="background-image:url({{ asset('img/capabilities-5.jpg') }})"></div>
+	<div class="photo data-img" data-speed="2" style="background-image:url(http://placehold.it/1x1)" data-sml="{{ asset('img/capabilities-5-m.jpg') }}" data-med="{{ asset('img/capabilities-5-m.jpg') }}" data-lrg="{{ asset('img/capabilities-5.jpg') }}"></div>
 
 	<div class="machine-photo-info-container">
 		<img class="machine-photo-diagram"  src="{{ asset('img/machines/machine-5.png') }}">
@@ -477,7 +477,7 @@ Capabilities - Smith Brothers Manufacturing
 
 <div class="photo-container">
 
-	<div class="photo" data-speed="2" style="background-image:url({{ asset('img/capabilities-6.jpg') }})"></div>
+	<div class="photo data-img" data-speed="2" style="background-image:url(http://placehold.it/1x1)" data-sml="{{ asset('img/capabilities-6-m.jpg') }}" data-med="{{ asset('img/capabilities-6-m.jpg') }}" data-lrg="{{ asset('img/capabilities-6.jpg') }}"></div>
 
 	<div class="machine-photo-info-container">
 		<!-- <img class="machine-photo-diagram"  src="{{ asset('img/machines/machine-5.png') }}"> -->
@@ -495,7 +495,7 @@ Capabilities - Smith Brothers Manufacturing
 
 <div class="photo-container">
 
-	<div class="photo" data-speed="2" style="background-image:url({{ asset('img/capabilities-7.jpg') }})"></div>
+	<div class="photo data-img" data-speed="2" style="background-image:url(http://placehold.it/1x1)" data-sml="{{ asset('img/capabilities-7-m.jpg') }}" data-med="{{ asset('img/capabilities-7-m.jpg') }}" data-lrg="{{ asset('img/capabilities-7.jpg') }}"></div>
 
 	<div class="machine-photo-info-container">
 		<!-- <img class="machine-photo-diagram"  src="{{ asset('img/machines/machine-5.png') }}"> -->
