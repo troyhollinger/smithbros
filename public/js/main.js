@@ -587,8 +587,10 @@ $(document).ready(function() {
 		if (!isSafari && !isExplorer) {
 			Photos.init();
 			Logo.init();
+		} else {
 
-			console.log('is not internet explorer or safari');
+			$(".logo").addClass('logo-fixed');
+
 		}
 		
 		Mast.init();

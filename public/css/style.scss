@@ -220,6 +220,30 @@ html {
 
 }
 
+.logo-fixed {
+
+	position: fixed;
+	left:10%;
+	top:10px;
+
+	width:160px;
+
+	@include breakpoint(large) {
+
+		width:120px;
+
+	}
+
+	@include breakpoint(medium) {
+
+		position: fixed;
+		left:5%;
+		top:10px;
+
+	}
+
+}
+
 #pacific-logo {
 
 	width:140px;
