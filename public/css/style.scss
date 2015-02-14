@@ -894,6 +894,7 @@ nav {
 	.container {
 
 		@include center;
+		overflow: hidden;
 
 		@include breakpoint(medium) {
 
