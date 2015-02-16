@@ -90,13 +90,13 @@ $gotham : 'Gotham-Book', 'Montserrat', 'Helvetica', Arial;
 
 @mixin stretchpoint($point) {
 	@if $point == small {
-    	@media (min-width: 0px) { @content; }
-	}
-	@else if $point == medium {
     	@media (min-width: 500px) { @content; }
 	}
-	@else if $point == large {
+	@else if $point == medium {
     	@media (min-width: 900px) { @content; }
+	}
+	@else if $point == large {
+    	@media (min-width: 1600px) { @content; }
 	}
 	@else {
 		@media (min-width: $point) { @content; }
