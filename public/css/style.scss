@@ -395,11 +395,11 @@ nav {
 
 	li.lighter {
 
-		color:$light;
+		color:lighten($dark, 35%);
 
 		&:before {
 
-			color:$light;
+			color:lighten($dark, 35%);
 
 		}
 
@@ -413,7 +413,7 @@ nav {
 
 	li.contact-lighter {
 
-		color:$light;
+		color:lighten($dark, 35%);
 
 	}
 
@@ -1645,7 +1645,7 @@ nav {
 
 	@extend .capabilities-title;
 
-	color:$light;
+	color:lighten($dark, 35%);
 
 }
 
