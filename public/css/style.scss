@@ -122,6 +122,12 @@ body {
 
 		}
 
+		@include stretchpoint(tablet) {
+
+			content : 'tablet'
+
+		}
+
 		@include stretchpoint(medium) {
 
 			content : 'medium';
@@ -546,6 +552,12 @@ nav {
 	td {
 
 		vertical-align:top;
+
+		@include breakpoint(tablet) {
+
+			font-size: .7rem;
+
+		}
 
 	}
 
