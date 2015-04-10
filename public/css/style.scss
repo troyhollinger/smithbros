@@ -855,6 +855,12 @@ nav {
 		@include center;
 		top:48%;
 
+		@include breakpoint(tablet) {
+
+			width:100%;
+
+		}
+
 		@include breakpoint(medium) {
 
 			@include uncenter;
@@ -1423,6 +1429,12 @@ nav {
 	img {
 
 		display: block;
+		width:100%;
+
+	}
+
+	@include breakpoint(tablet) {
+
 		width:100%;
 
 	}
