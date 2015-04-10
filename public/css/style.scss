@@ -1239,6 +1239,19 @@ nav {
 		font-size: 1.3rem;
 		line-height: 1.4rem;
 
+		@include breakpoint(tablet) {
+
+			font-size: 1rem;
+
+		}
+
+	}
+
+	@include breakpoint(tablet) {
+
+		width:50%;
+		font-size: .8rem;
+
 	}
 
 	@include breakpoint(medium) {
@@ -1279,6 +1292,15 @@ nav {
 		background-color: white;
 		color:$dark;
 		border:none;
+
+	}
+
+	@include breakpoint(tablet) {
+
+		width:180px;
+		height:45px;
+		line-height: 3rem;
+		font-size: .8rem;
 
 	}
 
