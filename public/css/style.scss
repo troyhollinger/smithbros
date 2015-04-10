@@ -873,14 +873,21 @@ nav {
 
 		margin-top: 15vh;
 
-		@include breakpoint(medium) {
+		@include breakpoint(tablet) {
 
 			margin-top: 0;
 			@include box-sizing(border-box);
-			padding-top:40px;
-			padding-bottom: 40px;
+			padding-top:90px;
+			// padding-bottom: 40px;
 
 		}
+
+	}
+
+	@include breakpoint(tablet) {
+
+		position: static;
+		height:auto;
 
 	}
 
