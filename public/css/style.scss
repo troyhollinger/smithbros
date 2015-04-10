@@ -1142,6 +1142,12 @@ nav {
 	font-size: .7rem;
 	width:90%;
 
+	@include breakpoint(tablet) {
+
+		font-size: .6rem;
+
+	}
+
 	@include breakpoint(medium) {
 
 		font-size: .8rem;
