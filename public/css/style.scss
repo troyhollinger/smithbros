@@ -99,6 +99,9 @@ $gotham : 'Gotham-Book', 'Montserrat', 'Helvetica', Arial;
 	@else if $point == medium {
     	@media (min-width: 900px) { @content; }
 	}
+	@else if $point == tablet {
+    	@media (min-width: 1100px) { @content; }
+	}
 	@else if $point == large {
     	@media (min-width: 1600px) { @content; }
 	}
@@ -355,44 +358,47 @@ nav {
 		font-size: .95rem;
 		font-weight: normal;
 		@include transition(transform .3s);
-		
-		&:before {
 
-			top:100%;
-			position: absolute;
-			content: attr(data-hover);
-			text-transform: uppercase;
-			color:$dark;
-			font-size: .95rem;
-			@include transition(transform .3s);
-
-			@include breakpoint(large) {
-
-				font-size: .9rem;
-
-			}
-
-			@include breakpoint(medium) {
-
-				display: none;
-
-			}
-
-		}
-
-		&:hover {
-
-			@include transform(translate(0, -100%));
+		@include stretchpoint(medium) {
 
 			&:before {
 
-				@include transform(translate(0, 0));
+				top:100%;
+				position: absolute;
+				content: attr(data-hover);
+				text-transform: uppercase;
+				color:$dark;
+				font-size: .95rem;
+				@include transition(transform .3s);
+
+				@include breakpoint(large) {
+
+					font-size: .9rem;
+
+				}
+
+				@include breakpoint(medium) {
+
+					display: none;
+
+				}
+
+			}
+
+			&:hover {
+
+				@include transform(translate(0, -100%));
+
+				&:before {
+
+					@include transform(translate(0, 0));
+
+				}
 
 			}
 
 		}
-
-
+		
 		@include breakpoint(large) {
 
 			font-size: .9rem;
@@ -658,7 +664,22 @@ nav {
 		bottom:8%;
 		bottom: 8vh;
 
+		@include breakpoint(medium) {
+
+			bottom:15%;
+			bottom: 15vh;
+
+		}
+
 	}	
+
+
+	@include breakpoint(medium) {
+
+		bottom:15%;
+		bottom: 15vh;
+
+	}
 
 }
 
@@ -833,9 +854,11 @@ nav {
 
 	}
 
+
 	@include breakpoint(medium) {
 
-		height:auto;
+		// height:;
+		background-color: $dark;
 
 	}
 
@@ -864,6 +887,7 @@ nav {
 		@include breakpoint(medium) {
 
 			@include uncenter;
+			display: none;
 
 		}
 
@@ -982,9 +1006,10 @@ nav {
 	@include breakpoint(medium) {
 
 		height:auto;
-		position: static;
+		// height:100%;
+		// position: static;
 		@include box-sizing(border-box);
-		padding:20px 0;
+		padding:30px 20px;
 
 
 	}
@@ -1012,6 +1037,7 @@ nav {
 
 		float:none;
 		margin:10px 0;
+		font-size: 2rem;
 
 	}
 
@@ -1073,7 +1099,8 @@ nav {
 
 		float:none;
 		text-align: left;
-		margin:10px 0;
+		margin:50px 0;
+		font-size: 1.2rem;
 
 	}
 
@@ -1748,6 +1775,12 @@ nav {
 
 	}
 
+	@include breakpoint(tablet) {
+
+		// margin-bottom: 
+
+	}
+
 }
 
 .pacific-overview-container {
@@ -1761,6 +1794,12 @@ nav {
 	@extend .capabilities-title;
 
 	color:lighten($dark, 35%);
+
+	@include breakpoint(tablet) {
+
+		display: none;
+
+	}
 
 }
 
@@ -1781,7 +1820,11 @@ nav {
 	top:115%;
 	right:0;
 
-	// margin-top: 10px;
+	@include breakpoint(medium) {
+
+		display: none;
+
+	}
 
 }
 

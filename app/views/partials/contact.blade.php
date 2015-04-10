@@ -43,8 +43,6 @@
 
 			<div class="container">
 
-				<a href="https://www.google.com/maps/place/5304+Banks+St,+San+Diego,+CA+92110/@32.7646,-117.199385,17z/data=!3m1!4b1!4m2!3m1!1s0x80deaaea4824f865:0x733d0bbce95137c5" target="_blank"><p class="address">5304 Banks Street <br>San Diego, CA 92110 </p></a>
-
 				<div class="info">
 
 					<table>
@@ -67,6 +65,8 @@
 					<a href="http://www.troyhollinger.com"><span class="credits">Website Made by Troy</span></a>
 
 				</div>
+
+				<a href="https://www.google.com/maps/place/5304+Banks+St,+San+Diego,+CA+92110/@32.7646,-117.199385,17z/data=!3m1!4b1!4m2!3m1!1s0x80deaaea4824f865:0x733d0bbce95137c5" target="_blank"><p class="address">5304 Banks Street <br>San Diego, CA 92110 </p></a>
 					
 				<div class="clear"></div>
 
