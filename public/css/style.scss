@@ -1409,6 +1409,12 @@ nav {
 		margin-top: 1rem;
 		height:5rem;
 
+		@include breakpoint(tablet) {
+
+			height:2.5rem;
+
+		}
+
 	}
 
 	p {
@@ -1423,6 +1429,12 @@ nav {
 	width:100%;
 	margin-top: 50px;
 	position: relative;
+
+	@include breakpoint(tablet) {
+
+		margin-top: 25px;
+
+	}
 
 }
 
