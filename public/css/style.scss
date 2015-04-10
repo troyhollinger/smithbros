@@ -989,6 +989,12 @@ nav {
 	text-transform: uppercase;
 	line-height: 1.8rem;
 
+	@include breakpoint(tablet) {
+
+		font-size: 1.5rem;
+
+	}
+
 	@include breakpoint(medium) {
 
 		float:none;
@@ -1041,6 +1047,12 @@ nav {
 			padding-right: 10px;
 
 		}
+
+	}
+
+	@include breakpoint(tablet) {
+
+		font-size: .7rem;
 
 	}
 
