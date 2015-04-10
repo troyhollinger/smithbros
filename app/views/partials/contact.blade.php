@@ -64,6 +64,8 @@
 					<a href="mailto:info@smithbrosmfg.com">info@smithbrosmfg.com</a><br>
 					&copy; 2014 - {{ date('Y') }} Smith Brothers Manufacturing
 
+					<a href="http://www.troyhollinger.com"><span class="credits">Website Made by Troy</span></a>
+
 				</div>
 					
 				<div class="clear"></div>

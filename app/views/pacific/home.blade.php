@@ -213,8 +213,8 @@ Pacific Welding
 						<!-- <img class="parts-image" src="{{ asset('img/parts/pacific-parts-7.jpg') }}" data-zoom="1.2"></img> -->
 					</div>
 					<div class="parts-image-caption">
-						<p class="bold">INSERT EXTRACTOR PLIERS</p>
-						<p>PG 15</p>
+						<p class="bold">SLEEVE ADAPTORS</p>
+						<p>PG 27</p>
 					</div>
 				</div>
 				<div class="parts-image-container short-parts-image-container">
@@ -222,8 +222,8 @@ Pacific Welding
 						<!-- <img class="parts-image" src="{{ asset('img/parts/pacific-parts-10.jpg') }}" data-zoom="1.2"></img> -->
 					</div>
 					<div class="parts-image-caption">
-						<p class="bold">DRILLS &amp; REAMERS</p>
-						<p>PG 15</p>
+						<p class="bold">TEE CONNECTIONS</p>
+						<p>PG 26</p>
 					</div>
 				</div>
 				
@@ -252,15 +252,6 @@ Pacific Welding
 				</div>
 				<div class="parts-image-container short-parts-image-container">
 					<div class="long-parts-image-container parts-image-centerer">
-						<!-- <img class="parts-image" src="{{ asset('img/parts/pacific-parts-8.jpg') }}" data-zoom="1.2"></img> -->
-					</div>
-					<div class="parts-image-caption">
-						<p class="bold">TEE CONNECTIONS</p>
-						<p>PG 26</p>
-					</div>
-				</div>
-				<div class="parts-image-container long-parts-image-container">
-					<div class="long-parts-image-container parts-image-centerer">
 						<img class="parts-image data-img" data-sml="http://placeholder.it/1x1" data-med="http://placeholder.it/1x1" data-lrg="{{ asset('img/parts/pacific-parts-24.jpg') }}" src="http://placeholder.it/1x1" data-zoom="1.2"></img>
 					</div>
 					<div class="parts-image-caption">
@@ -268,6 +259,15 @@ Pacific Welding
 						<p>TAPER ADAPTERS PG 27</p>
 					</div>
 				</div>
+				{{-- <div class="parts-image-container long-parts-image-container">
+					<div class="long-parts-image-container parts-image-centerer">
+						<img class="parts-image data-img" data-sml="http://placeholder.it/1x1" data-med="http://placeholder.it/1x1" data-lrg="{{ asset('img/parts/pacific-parts-24.jpg') }}" src="http://placeholder.it/1x1" data-zoom="1.2"></img>
+					</div>
+					<div class="parts-image-caption">
+						<p class="bold">THREADED MORSE</p>
+						<p>TAPER ADAPTERS PG 27</p>
+					</div>
+				</div> --}}
 				
 
 			</div>

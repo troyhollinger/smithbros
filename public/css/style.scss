@@ -76,6 +76,9 @@ $gotham : 'Gotham-Book', 'Montserrat', 'Helvetica', Arial;
 	@else if $point == medium {
     	@media (max-width: 900px) { @content; }
 	}
+	@else if $point == tablet {
+    	@media (max-width: 1100px) { @content; }
+	}
 	@else if $point == large {
     	@media (max-width: 1600px) { @content; }
 	}
@@ -263,6 +266,12 @@ html {
 	overflow: auto;
 	margin: 0 auto;
 
+	@include breakpoint(tablet) {
+
+		width:90%;
+
+	}
+
 	@include breakpoint(medium) {
 
 		width:100%;
@@ -376,6 +385,7 @@ nav {
 
 		}
 
+
 		@include breakpoint(large) {
 
 			font-size: .9rem;
@@ -421,6 +431,12 @@ nav {
 
 		overflow: hidden;
 
+	}
+
+	@include breakpoint(tablet) {
+
+		width:100%;
+			
 	}
 
 	@include breakpoint(medium) {
@@ -919,7 +935,7 @@ nav {
 	.container {
 
 		@include center;
-		overflow: hidden;
+		overflow: visible;
 
 		@include breakpoint(medium) {
 
@@ -970,6 +986,7 @@ nav {
 	text-align: right;
 	color:white;
 	font-size: .9rem;
+	overflow: visible;
 
 	a {
 		color:white;
@@ -1168,8 +1185,8 @@ nav {
 
 	p:first-child {
 
-		font-size: 1.5rem;
-		line-height: 1.5rem;
+		font-size: 1.3rem;
+		line-height: 1.4rem;
 
 	}
 
@@ -1658,7 +1675,17 @@ nav {
 
 
 
+.credits {
 
+	text-transform: uppercase;
+	font-size: .6rem;
+	position: absolute;
+	top:115%;
+	right:0;
+
+	// margin-top: 10px;
+
+}
 
 
 

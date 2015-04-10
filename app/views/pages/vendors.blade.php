@@ -20,9 +20,19 @@ Vendors - Smith Brothers Manufacturing
 			<br>
 			<p>Proudly serving such companies as - </p>
 			<br>
-			<p class="bold">Solar Turbines</p>
-			<p class="bold">ROHR Industries</p>
-			<p class="bold">Hughes</p>
+			<p class="bold">SOLAR TURBINES INC. </p>
+			<p class="bold">ROHR/BF GOODRICH</p>
+			<p class="bold">KETCH-ALL COMPANY</p>
+			<p class="bold">FOGG-IT NOZZLE</p>
+			<p>50+ YEARS</p>
+			<br>
+			<p class="bold">THERMAL STRUCTURES</p>
+			<p class="bold">HI-TEMP INSULATION</p>
+			<p class="bold">CROWER CAMS</p>
+			<p class="bold">WELDMAC MFG.</p>
+			<p>40+ YEARS</p>
+
+
 			<br>
 			<p class="bold smaller">And Hopefully You!</p>
 			<br>

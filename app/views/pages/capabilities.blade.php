@@ -205,7 +205,7 @@ Capabilities - Smith Brothers Manufacturing
 							<td>3</td>
 							<td>Conomatic</td>
 							<td>6 Spindles</td>
-							<td>11/16&rdquo;</td>
+							<td>9/16&rdquo;</td>
 							<td>Capacity</td>
 						</tr>
 						<tr>
@@ -269,7 +269,7 @@ Capabilities - Smith Brothers Manufacturing
 						</tr>
 						<tr>
 							<td>2&nbsp;</td>
-							<td>MONARCH TOOLING 1-3/8“ (TOOLING LATHE)</td>
+							<td>MONARCH TOOLING 1-3/8“ 10-EE TOOLING LATHE</td>
 						</tr>
 						<tr>
 							<td>2&nbsp;</td>
@@ -321,7 +321,7 @@ Capabilities - Smith Brothers Manufacturing
 						</tr>
 						<tr>
 							<td>1</td>
-							<td>LIGHT PUNCH PRESS</td>
+							<td>PUNCH PRESS (5 TON)</td>
 						</tr>
 						<tr>
 							<td>1</td>
@@ -359,6 +359,14 @@ Capabilities - Smith Brothers Manufacturing
 							<td>1</td>
 							<td>HARDINGE 2ND OP MACHINE 1-3/8&rdquo; THRU SPINDLE CAPACITY</td>
 						</tr>
+						<tr>
+							<td></td>
+							<td>PARTS WASHER</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>CENTRIFUGE</td>
+						</tr>	
 
 					</table>
 
@@ -484,7 +492,7 @@ Capabilities - Smith Brothers Manufacturing
 
 		<div class="machine-photo-text-container">
 			<h2 class="machine-photo-title">CONOMATIC</h2>
-			<p class="machine-photo-description">6 SPINDLES, MULTIPLE CAPACITIES FROM TINY TO 11/16&rdquo; UP TO 1-3/4&rdquo;</p>
+			<p class="machine-photo-description">6 SPINDLES, MULTIPLE CAPACITIES FROM TINY TO 9/16&rdquo; UP TO 1-3/4&rdquo;</p>
 		</div>
 
 		<div class="clear"></div>

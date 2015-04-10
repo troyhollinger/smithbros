@@ -65,6 +65,33 @@ if (thisPage === 'vendors') {
 }
 
 
+if (thisPage === 'quote') {
+
+	var app = angular.module('quote', []);
+
+	app.controller('QuoteFormController', ['$scope', '$http', function($scope, $http) {
+
+		$scope.form = {};
+
+		$scope.sendEmail = function() {
+
+			$http.post('/quote', $scope.form).success(function(response) {
+
+				console.log("successful");
+
+			}).error(function(response) {
+
+				console.log("ERROR");
+
+			});
+
+		}
+
+	}]);
+
+}
+
+
 var viewport = {
 
 	getIndicator : function() {

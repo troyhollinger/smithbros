@@ -46,3 +46,19 @@ Route::get('quote', ['as' => 'quote', function() {
 	return View::make('pages.quote', ['backgroundImagePath' => $backgroundImage]);
 
 }]);
+
+
+Route::post('quote', ['as' => 'quote.post', function() {
+
+	$input = Input::all();
+
+	$name = Input::get('name');
+
+	Mail::send('emails.quote', array('form' => $input), function($message) use ($name) {
+
+	    $message->to('austenpayan@gmail.com', 'John Smith')->subject('New Quote Request from ' . $name);
+	    
+	});
+
+
+}]);
