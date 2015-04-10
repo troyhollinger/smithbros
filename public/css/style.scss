@@ -436,7 +436,7 @@ nav {
 
 	@include breakpoint(tablet) {
 
-		width:100%;
+		width:80%;
 			
 	}
 
@@ -697,6 +697,7 @@ nav {
 	@include breakpoint(tablet) {
 
 		left:5%;
+		width:45%;
 
 	}
 
