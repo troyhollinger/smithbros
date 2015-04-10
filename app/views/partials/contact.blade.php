@@ -61,7 +61,8 @@
 
 					<div class="clear"></div>
 
-					<a href="mailto:info@smithbrosmfg.com">info@smithbrosmfg.com</a>
+					<a href="mailto:info@smithbrosmfg.com">info@smithbrosmfg.com</a><br>
+					&copy; 2014 - {{ date('Y') }} Smith Brothers Manufacturing
 
 				</div>
 					

@@ -66,7 +66,7 @@
 		<p class="photo-caption-description">Glen and Ameda Smith started manufacturing out of a garage then they moved to the present facility as seen in this picture from 1947.</p>
 	</div>
 
-	<div class="photo-static data-img" data-speed="2" style="background-image:url(http://placehold.it/1x1)" data-sml="{{ asset('img/1945-to-now-2-m.jpg') }}" data-med="{{ asset('img/1945-to-now-2-m.jpg') }}" data-lrg="{{ asset('img/1945-to-now-2.jpg') }}"></div>
+	<div class="photo-static photo-center data-img" data-speed="2" style="background-image:url(http://placehold.it/1x1)" data-sml="{{ asset('img/1945-to-now-2-m.jpg') }}" data-med="{{ asset('img/1945-to-now-2-m.jpg') }}" data-lrg="{{ asset('img/1945-to-now-2.jpg') }}"></div>
 
 </div>
 
@@ -78,7 +78,7 @@
 		<p class="photo-caption-description">Remembering our Past, Prepared for the Future. </p>
 	</div>
 
-	<div class="photo data-img" data-speed="2" style="background-image:url(http://placehold.it/1x1)" data-sml="{{ asset('img/1945-to-now-3-m.jpg') }}" data-med="{{ asset('img/1945-to-now-3-m.jpg') }}" data-lrg="{{ asset('img/1945-to-now-3.jpg') }}"></div>
+	<div class="photo photo-center data-img" data-speed="2" style="background-image:url(http://placehold.it/1x1)" data-sml="{{ asset('img/1945-to-now-3-m.jpg') }}" data-med="{{ asset('img/1945-to-now-3-m.jpg') }}" data-lrg="{{ asset('img/1945-to-now-3.jpg') }}"></div>
 
 </div>
 
