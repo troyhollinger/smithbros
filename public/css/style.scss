@@ -214,11 +214,11 @@ html {
 
 	}
 
-	@include breakpoint(medium) {
+	@include breakpoint(tablet) {
 
-		position: fixed;
 		left:5%;
 		top:10px;
+		position: fixed;
 
 	}
 
@@ -691,6 +691,12 @@ nav {
 	&.darker {
 
 		color: black;
+
+	}
+
+	@include breakpoint(tablet) {
+
+		left:5%;
 
 	}
 
