@@ -30,7 +30,7 @@
         @include ('partials.nav') 
 
         <div class="master-container" id="master-container">
-
+            
             @yield('content')
 
             @include('partials.contact')

@@ -616,9 +616,12 @@ var MobileNav = {
 
 	body : $("#master-container"),
 
+	navbar : $(".navbar"),
+
 	open : function() {
 
 		MobileNav.body.addClass('shifted');
+		MobileNav.navbar.addClass('shifted');
 		MobileNav.hamburger.addClass('open').removeClass('closed');
 
 	},
@@ -626,6 +629,7 @@ var MobileNav = {
 	close : function() {
 
 		MobileNav.body.removeClass('shifted');
+		MobileNav.navbar.removeClass('shifted');
 		MobileNav.hamburger.addClass('closed').removeClass('open');
 
 	}
