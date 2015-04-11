@@ -49,7 +49,7 @@
 
 <div class="photo-container">
 
-	<div class="photo-caption photo-caption-fixed photo-caption-mobile">
+	<div class="photo-caption photo-caption-fixed photo-caption-mobile first-caption">
 		<h2 class="photo-caption-title">Here since dirt roads and early century coupes.</h2>
 		<p class="photo-caption-description">Smith Brothers Original / Current shop.</p>
 	</div>
