@@ -33,12 +33,16 @@
 				<a href="#contact"><li id="contact-list-item" data-hover="Contact">Contact</li></a>
 				<a href="{{ route('home') }}"><li data-hover="Smith Bros MFG">Smith Bros MFG</li></a>
 				<a href="{{ route('vendors') }}"><li {{ Request::is('vendors') || Request::is('quote') ? 'class="lighter"' : '' }} data-hover="Vendors">Vendors</li></a>
+				<a href="{{ route('quote') }}" class="mobile-navigation-item"><li {{ Request::is('quote') ? 'class="lighter"' : '' }} >Request Quote</li></a>
 				@else
 				<a href="{{ route('home') }}"><li {{ Request::is('/') ? 'class="lighter"' : '' }} data-hover="1945 to Now">1945 to Now</li></a>
 				<a href="{{ route('capabilities') }}"><li {{ Request::is('capabilities') ? 'class="lighter"' : '' }} data-hover="Capabilities">Capabilities</li></a>
+				<a href="{{ route('capabilities') }}#machine-list" class="mobile-navigation-item"><li {{ Request::is('quote') ? 'class="lighter"' : '' }} >Machine List</li></a>
 				<a href="#contact"><li id="contact-list-item" data-hover="Contact">Contact</li></a>
 				<a href="{{ route('pacific.home') }}"><li {{ Request::is('pacific') ? 'class="lighter"' : '' }} data-hover="Pacific Welding">Pacific Welding</li></a>
 				<a href="{{ route('vendors') }}"><li {{ Request::is('vendors') || Request::is('quote') ? 'class="lighter"' : '' }} data-hover="Customers">Customers</li></a>
+				<a href="{{ route('quote') }}" class="mobile-navigation-item"><li {{ Request::is('quote') ? 'class="lighter"' : '' }} >Request Quote</li></a>
+
 				@endif
 			</ul>
 

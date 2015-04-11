@@ -462,6 +462,20 @@ nav {
 
 } 
 
+
+
+.mobile-navigation-item {
+
+	display: none;
+
+	@include breakpoint(medium) {
+
+		display: block;
+
+	}
+
+}
+
 .content {
 
 	width:100%;
