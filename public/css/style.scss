@@ -1165,7 +1165,7 @@ nav {
 		/* Show first and second column at medium screen sizes and smaller */
 		&:not(:first-child):not(:nth-child(2)) {
 
-			display: none;
+			// display: none;
 
 		}		
 	}
