@@ -280,7 +280,7 @@ Pacific Welding
 
 </div>	
 
-{{-- <div class="photo-container">
+<div class="photo-container pacific-photo-container">
 
 	<div class="photo-caption photo-caption-fixed pacific-photo-caption">
 
@@ -293,7 +293,7 @@ Pacific Welding
 
 </div>
 
-<div class="photo-container">
+<div class="photo-container pacific-photo-container">
 
 	<div class="photo-caption photo-caption-fixed pacific-photo-caption">
 
@@ -304,7 +304,7 @@ Pacific Welding
 
 	<div class="photo data-img" data-speed="2" data-sml="{{ asset('img/pacific-3-m.jpg') }}" data-med="{{ asset('img/pacific-3-m.jpg') }}" data-lrg="{{ asset('img/pacific-3.jpg') }}" style="background-image:url(http://placeholder.it/1x1); background-position:bottom;"></div>
 	
-</div> --}}
+</div>
 
 
 

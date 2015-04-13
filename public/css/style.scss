@@ -1815,6 +1815,16 @@ nav {
 }
 
 
+.pacific-photo-container {
+
+	@include breakpoint(small) {
+
+		display: none;
+
+	}
+
+}
+
 .pacific-photo-caption {
 
 	display: inline-block;
