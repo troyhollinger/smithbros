@@ -320,6 +320,9 @@ var Mast = {
 			Mast.pageElements.hide();
 			Mast.requestQuoteButton.show();
 
+			//This is here because the image on the vendors page is too dark...sorry. client.
+			if (thisPage === 'vendors') Logo.goDark();
+
 		} else {
 
 			Mast.element.addClass('nav-opaque').removeClass('nav-transparent');
@@ -327,6 +330,9 @@ var Mast = {
 			Mast.contactListItem.removeClass('contact-lighter');
 			Mast.requestQuoteButton.hide();
 			Mast.pageElements.show();
+
+			//This is here because the image on the vendors page is too dark...sorry. client.
+			if (thisPage === 'vendors') Logo.goLight();
 
 		}
 
@@ -376,7 +382,21 @@ var Logo = {
 
 		Logo.loop = requestAnimationFrame(Logo.fixed);
 
+	},
+
+	goDark : function() {
+
+		Logo.element.attr('src', assetPath + 'img/script-logo.png');
+
+	}, 
+
+	goLight : function() {
+
+		Logo.element.attr('src', assetPath + 'img/script-logo-white.png');
+
 	}
+
+
 
 }
 

@@ -16,7 +16,8 @@
         <script src="{{ asset('js/vendor/modernizr-2.6.2.min.js') }}"></script>
         <script>
 
-            var thisPage = '{{ Route::currentRouteName() }}'
+            var thisPage = '{{ Route::currentRouteName() }}';
+            var assetPath = '{{ asset("/") }}';
 
         </script>
     </head>

@@ -43,6 +43,15 @@
 
 			<div class="container">
 
+				@if(Route::currentRouteName() === 'pacific.home')
+
+				<div class="pacific-footer-blurb">
+					<h2>Pacific Welding</h2>
+					<h4>Spot Weld Inserts, Electrodes and Accessories, Contact us now for a full catalog.</h4>
+				</div>
+
+				@endif
+
 				<div class="info">
 
 					<table>
@@ -60,7 +69,7 @@
 					<div class="clear"></div>
 
 					<a href="mailto:info@smithbrosmfg.com">info@smithbrosmfg.com</a><br>
-					&copy; 2014 - {{ date('Y') }} Smith Brothers Manufacturing
+					
 
 					<a href="http://www.troyhollinger.com"><span class="credits">Website Made by Troy</span></a>
 

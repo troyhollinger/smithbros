@@ -1111,7 +1111,7 @@ nav {
 
 		float:none;
 		text-align: left;
-		margin:50px 0;
+		margin:30px 0;
 		font-size: 1.2rem;
 
 	}
@@ -1881,7 +1881,35 @@ nav {
 
 
 
+.pacific-footer-blurb {
 
+	margin-bottom: 10px;
+	color:white;
+	display: none;
+
+	h2 {
+
+		font-size: 2rem;
+		font-weight: bold;
+		text-transform: uppercase;
+
+	}
+
+	h4 {
+
+		font-size: 1.3rem;
+		font-weight: bold;
+
+	}
+
+
+	@include breakpoint(small) {
+
+		display: block;
+
+	}
+
+}
 
 
 
