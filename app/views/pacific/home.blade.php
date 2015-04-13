@@ -1,7 +1,5 @@
 @extends ('layouts.master')
 
-
-
 @section('title')
 Pacific Welding
 @stop
@@ -259,20 +257,8 @@ Pacific Welding
 						<p>TAPER ADAPTERS PG 27</p>
 					</div>
 				</div>
-				{{-- <div class="parts-image-container long-parts-image-container">
-					<div class="long-parts-image-container parts-image-centerer">
-						<img class="parts-image data-img" data-lrg="{{ asset('img/parts/pacific-parts-24.jpg') }}" src="http://placeholder.it/1x1" data-zoom="1.2"></img>
-					</div>
-					<div class="parts-image-caption">
-						<p class="bold">THREADED MORSE</p>
-						<p>TAPER ADAPTERS PG 27</p>
-					</div>
-				</div> --}}
 				
-
 			</div>
-
-
 
 		</div>
 
