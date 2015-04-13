@@ -624,9 +624,13 @@ $(document).ready(function() {
 
 		}
 		
-		Mast.init();
-		
 		Team.init();
+
+	}
+
+	if (viewport.is.medium() || viewport.is.large()) {
+
+		Mast.init();
 
 	}
 
