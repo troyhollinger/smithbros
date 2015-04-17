@@ -8,6 +8,11 @@ Pacific Welding
 
 <div class="photo-container">
 
+	<div class="photo-caption photo-caption-fixed photo-caption-mobile first-caption">
+		<h2 class="photo-caption-title">Made in the U.S.A</h2>
+		<p class="photo-caption-description">We are the Only Spot Welding Electrode MFG on the Pacific.</p>
+	</div>
+
 	<div class="photo data-img" data-speed="2" data-sml="{{ asset('img/pacific-1-m.jpg') }}" data-med="{{ asset('img/pacific-1-m.jpg') }}" data-lrg="{{ asset('img/pacific-1.jpg') }}" style="background-image:url(http://placeholder.it/1x1); background-position:bottom;"></div>
 
 </div>	
