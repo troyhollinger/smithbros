@@ -269,6 +269,8 @@ $('a[href*=#]:not([href=#])').click(function() {
 
 			$('html,body').animate({ scrollTop: target.offset().top }, 1000);
 
+			MobileNav.close();
+
         	return false;
 
 		}
