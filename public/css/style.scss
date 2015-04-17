@@ -411,6 +411,8 @@ nav {
 			font-size: 1.4rem;
 			margin-bottom: 10px;
 			white-space: nowrap;
+			margin-right: 0;
+			display: inline-block;
 
 		}
 	
@@ -1917,6 +1919,20 @@ nav {
 	@include breakpoint(tablet) {
 
 		// margin-bottom: 
+
+	}
+
+}
+
+.nav-capabilities-title {
+
+	@extend .capabilities-title;
+
+	.hamburger {
+
+		float:right;
+		margin-left: 5px;
+		margin-top: 4px;
 
 	}
 
