@@ -73,21 +73,109 @@ if (thisPage === 'quote') {
 
 		$scope.form = {};
 
+		$scope.message = '';
+
+		$scope.showMessage = false;
+
+		$scope.messageFlair = 'error';
+
 		$scope.sendEmail = function() {
+
+			if (!$scope.validate()) {
+
+				return false;
+
+			}
+
+			$scope.messageFlair = '';
+			$scope.message = 'Sending...';
+			$scope.showMessage = true;
 
 			$http.post('/quote', $scope.form).success(function(response) {
 
-				console.log("successful");
+				$scope.alert('Thank you, we will get back to you.', true);
+
+				$scope.form = {};
 
 			}).error(function(response) {
 
-				console.log("ERROR");
+				$scope.alert('Sorry, something went wrong on our end. Please try again later.', false);
 
 			});
 
 		}
 
+		$scope.alert = function(message, success) {
+
+			$scope.message = message;
+
+			if (success) {
+
+				$scope.messageFlair = 'success';	
+
+			} else if (success === false) {
+
+				$scope.messageFlair = 'error';
+
+			}
+	
+			$scope.showMessage = true;
+			
+		}
+
+		$scope.validate = function() {
+
+			console.log("checking validity");
+
+			if (!$scope.form.name) {
+
+				$scope.alert('please enter a name', false);
+
+				return false;
+
+			}
+
+			if (!$scope.form.email) {
+		
+				$scope.alert('please enter an email address', false);
+		
+				return false;
+
+			}
+
+			if (!$scope.form.phone) {
+
+				$scope.alert('please enter a phone number', false);
+
+				return false;
+
+			}
+
+			if (!$scope.form.location) {
+
+				$scope.alert('please enter a city and state', false);
+
+				return false;
+
+			}
+
+			if (!$scope.form.description) {
+
+				$scope.alert('please enter a description', false);
+
+				return false;
+
+			}
+
+			$scope.showMessage = false;
+			$scope.message = '';
+
+			return true;
+
+		}
+
 	}]);
+
 
 }
 

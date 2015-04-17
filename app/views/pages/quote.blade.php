@@ -62,6 +62,8 @@ Request A Quote - Smith Brothers Manufacturing
 
 				</div>
 
+				<span class="quote-form-message" ng-show="showMessage" ng-class="{ 'success' : messageFlair == 'success', 'error' : messageFlair == 'error' }" ng-cloak>@{{ message }}</span>
+
 			</form>
 		</div>
 

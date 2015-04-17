@@ -1316,6 +1316,7 @@ nav {
 	text-align: center;
 	border: none;
 	text-transform: uppercase;
+	cursor: pointer;
 	@include box-sizing(border-box);
 
 	&.not-ready {
@@ -1505,6 +1506,38 @@ nav {
 	}
 
 }
+
+.quote-form-message {
+
+	display: block;
+	margin-top: 20px;
+	font-size: 1.3rem;
+	font-weight: bold;
+	color:white;
+	box-sizing:border-box;
+	padding:8px 10px;
+	text-align: center;
+
+	&.error {
+
+		background-color: #e74c3c;
+
+	}
+
+	&.success {
+
+		background-color: #2ecc71;
+
+	}
+
+	&.info {
+
+		background-color: #95a5a6;
+
+	}
+
+}
+
 
 .team-container {
 
@@ -1836,7 +1869,7 @@ nav {
 .credits {
 
 	text-transform: uppercase;
-	font-size: .4rem;
+	font-size: .5rem;
 	position: absolute;
 	top:115%;
 	right:0;
