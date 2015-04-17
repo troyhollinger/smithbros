@@ -412,7 +412,7 @@ nav {
 			margin-bottom: 10px;
 			white-space: nowrap;
 			margin-right: 0;
-			display: inline-block;
+			
 
 		}
 	
@@ -615,7 +615,8 @@ nav {
 
 	&.first-photo {
 
-		background-position: bottom;
+		// background-position: bottom;
+		background-position: right bottom;
 
 	}
 
@@ -728,8 +729,8 @@ nav {
 
 		@include breakpoint(medium) {
 
-			bottom:20%;
-			bottom: 20vh;
+			bottom:15%;
+			bottom: 15vh;
 
 		}
 
@@ -1927,6 +1928,8 @@ nav {
 .nav-capabilities-title {
 
 	@extend .capabilities-title;
+
+	display: inline-block;
 
 	.hamburger {
 
