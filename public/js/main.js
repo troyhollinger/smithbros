@@ -35,6 +35,13 @@ if (thisPage === 'vendors') {
 
 		}
 
+		$scope.authenticate = function() {
+
+			$scope.email = 'Not currently available';
+			$scope.password = '';
+
+		}
+
 	}]);
 
 }

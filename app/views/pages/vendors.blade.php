@@ -57,7 +57,7 @@ Vendors - Smith Brothers Manufacturing
 				<p><input type="password" name="vendor-password" id="vendor-password" autocomplete="off" ng-model="password" ng-keyup="checkForCompletion()"></p>
 				<p><label for="vendor-password">Password</label></p>
 
-				<p class="sign-in-button"> <input type="submit" class="button" ng-class="{'not-ready' : filledIn === false, 'ready' : filledIn === true}"  value="Enter"></p>
+				<p class="sign-in-button"> <input type="submit" class="button" ng-class="{'not-ready' : filledIn === false, 'ready' : filledIn === true}"  value="Enter" ng-click="authenticate()"></p>
 							
 			</form>
 
