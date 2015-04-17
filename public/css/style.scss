@@ -1273,7 +1273,7 @@ nav {
 	font-size: 1.1rem;
 	float:left;
 
-	p:first-child {
+	&.first {
 
 		font-size: 1.3rem;
 		line-height: 1.4rem;
@@ -1307,23 +1307,39 @@ nav {
 
 .button {
 
-	width:200px;
-	height:50px;
+	position: relative;
+	min-width:200px;
+	width:auto;
+	display: inline-block;
+	// height:50px;
+	height:auto;
 	background-color: white;
 	color:$dark;
 	font-size: .9rem;
-	line-height: 3.2rem;
+	// line-height: 3.2rem;
 	text-align: center;
 	border: none;
 	text-transform: uppercase;
 	cursor: pointer;
 	@include box-sizing(border-box);
+	padding:15px 0px;
+	overflow: hidden;
 
 	&.not-ready {
 
 		background-color: transparent;
 		border:2px solid white;
 		color:white;
+
+		p {
+
+			&:before {
+
+				color:white;
+
+			}
+
+		}
 
 	}
 
@@ -1332,6 +1348,67 @@ nav {
 		background-color: white;
 		color:$dark;
 		border:none;
+
+		p {
+
+			&:before {
+
+				color:$dark;
+
+			}
+
+		}
+
+	}
+
+	div {
+
+		overflow: hidden;
+
+	}
+
+	p {
+
+		display: inline-block;
+		@include transition(transform .3s);
+		// overflow: hidden;
+		// line-height: 1rem;
+
+		&:before {
+
+			top:100%;
+			position: absolute;
+			content: attr(data-hover);
+			text-transform: uppercase;
+			color:$dark;
+			font-size: .9rem;
+			
+
+			@include breakpoint(large) {
+
+				font-size: .9rem;
+
+			}
+
+			@include breakpoint(medium) {
+
+				display: none;
+
+			}
+
+		}
+
+		&:hover {
+
+			@include transform(translate(0, -100%));
+
+			&:before {
+
+				@include transform(translate(0, 0));
+
+			}
+
+		}
 
 	}
 
@@ -1394,11 +1471,13 @@ nav {
 	.sign-in-button {
 
 		text-align: right;
+		overflow: auto;
 
 	}
 
-	input[type="submit"] {
+	.button {
 
+		float:right;
 		margin-top: 60px;
 		border-radius: 0;
 
@@ -1464,7 +1543,7 @@ nav {
 
 	}
 
-	p {
+	& > p {
 
 		margin-bottom: 15px;
 
@@ -1496,6 +1575,16 @@ nav {
 		background-color: transparent;
 		border:1px solid white;
 		color:white;
+
+		p {
+
+			&:before {
+
+				color:white;
+
+			}
+
+		}
 
 	}
 

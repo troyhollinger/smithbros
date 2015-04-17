@@ -16,7 +16,7 @@ Vendors - Smith Brothers Manufacturing
 		
 		<div class="vendor-info">
 		
-			<p class="bold">MANUFACTURERS OF SCREW MACHINE PRODUCTS AND PACIFIC WELDING ELECTRODES</p>
+			<p class="bold first">MANUFACTURERS OF SCREW MACHINE PRODUCTS AND PACIFIC WELDING ELECTRODES</p>
 			<br>
 			<p>Proudly serving such companies as - </p>
 			<br>
@@ -37,7 +37,13 @@ Vendors - Smith Brothers Manufacturing
 			<p class="bold smaller">And Hopefully You!</p>
 			<br>
 
-			<a href="{{ route('quote') }}"><div class="button">Request a quote</div></a>
+			<a href="{{ route('quote') }}">
+				<div class="button">
+					<div>
+						<p data-hover="Request a quote">Request a quote</p>
+					</div>
+				</div>
+			</a>
 
 		</div>
 
@@ -57,7 +63,11 @@ Vendors - Smith Brothers Manufacturing
 				<p><input type="password" name="vendor-password" id="vendor-password" autocomplete="off" ng-model="password" ng-keyup="checkForCompletion()"></p>
 				<p><label for="vendor-password">Password</label></p>
 
-				<p class="sign-in-button"> <input type="submit" class="button" ng-class="{'not-ready' : filledIn === false, 'ready' : filledIn === true}"  value="Enter" ng-click="authenticate()"></p>
+				<p class="sign-in-button"> <div class="button" ng-class="{'not-ready' : filledIn === false, 'ready' : filledIn === true}" ng-click="authenticate()"> 
+					<div>
+						<p data-hover="Enter">Enter</p>
+					</div>
+				</div> </p>
 							
 			</form>
 

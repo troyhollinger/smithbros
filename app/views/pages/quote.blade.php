@@ -55,8 +55,18 @@ Request A Quote - Smith Brothers Manufacturing
 
 				<div class="quote-form-actions">
 
-					<a href="{{ route('vendors') }}"><div class="quote-form-action cancel button">Cancel</div></a>
-					<div class="quote-form-action request button" ng-click="sendEmail()">Request</div>
+					<a href="{{ route('vendors') }}">
+						<div class="quote-form-action cancel button">
+							<div>
+								<p data-hover="Cancel">Cancel</p>
+							</div>
+						</div>
+					</a>
+					<div class="quote-form-action request button" ng-click="sendEmail()">
+						<div>
+							<p data-hover="Request">Request</p>
+						</div>
+					</div>
 
 					<div class="clear"></div>
 
