@@ -216,6 +216,7 @@ html {
 	left:5%;
 	z-index: 11;
 	width:240px;
+	pointer-events:none;
 
 	@include breakpoint(large) {
 
@@ -1073,6 +1074,7 @@ nav {
 	color:white;
 	font-size: .9rem;
 	overflow: visible;
+	top:5px;
 
 	a {
 		color:white;
