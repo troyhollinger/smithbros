@@ -403,6 +403,7 @@ nav {
 		@include breakpoint(large) {
 
 			font-size: .9rem;
+			margin-right: 30px;
 
 		}
 
@@ -446,6 +447,12 @@ nav {
 	ul {
 
 		overflow: hidden;
+
+	}
+
+	@include breakpoint(1550px) {
+
+		width:80%;		
 
 	}
 
@@ -2067,3 +2074,8 @@ nav {
 
 
 
+#customers-nav-element {
+
+	margin-right: 0;
+
+}

@@ -32,7 +32,7 @@
 				<a href="#catalog"><li {{ Request::is('capabilities') ? 'class="lighter"' : '' }} data-hover="Catalog">Catalog</li></a>
 				<a href="#contact"><li id="contact-list-item" data-hover="Contact">Contact</li></a>
 				<a href="{{ route('home') }}"><li data-hover="Smith Bros MFG">Smith Bros MFG</li></a>
-				<a href="{{ route('vendors') }}"><li {{ Request::is('vendors') || Request::is('quote') ? 'class="lighter"' : '' }} data-hover="Vendors">Customers</li></a>
+				<a href="{{ route('vendors') }}"><li {{ Request::is('vendors') || Request::is('quote') ? 'class="lighter"' : '' }} data-hover="Vendors" id="customers-nav-element">Customers</li></a>
 				<a href="{{ route('quote') }}" class="mobile-navigation-item"><li {{ Request::is('quote') ? 'class="lighter"' : '' }} >Request Quote</li></a>
 				@else
 				<a href="{{ route('home') }}"><li {{ Request::is('/') ? 'class="lighter"' : '' }} data-hover="1945 to Now">1945 to Now</li></a>
@@ -44,7 +44,7 @@
 					</div></li></a>
 				<a href="#contact"><li id="contact-list-item" data-hover="Contact">Contact</li></a>
 				<a href="{{ route('pacific.home') }}"><li {{ Request::is('pacific') ? 'class="lighter"' : '' }} data-hover="Pacific Welding">Pacific Welding</li></a>
-				<a href="{{ route('vendors') }}"><li {{ Request::is('vendors') || Request::is('quote') ? 'class="lighter"' : '' }} data-hover="Customers">Customers</li></a>
+				<a href="{{ route('vendors') }}"><li {{ Request::is('vendors') || Request::is('quote') ? 'class="lighter"' : '' }} data-hover="Customers" id="customers-nav-element">Customers</li></a>
 				<a href="{{ route('quote') }}" class="mobile-navigation-item"><li {{ Request::is('quote') ? 'class="lighter"' : '' }} >Request Quote</li></a>
 
 				@endif
