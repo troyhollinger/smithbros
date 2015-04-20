@@ -213,9 +213,9 @@ html {
 .logo {
 
 	position: absolute;
-	left:10%;
+	left:6%;
 	z-index: 11;
-	width:160px;
+	width:200px;
 
 	@include breakpoint(large) {
 
