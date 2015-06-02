@@ -46,7 +46,7 @@
         <script src="{{ asset('bower_components/angular/angular.min.js') }}"></script>
         @endif
         <script src="{{ asset('bower_components/DataImg/data-img.min.js') }}"></script>
-        <script src="{{ asset('production/app.min.js') }}"></script>
+        <script src="{{ asset('production/app.js') }}"></script>
         <script>
             // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;

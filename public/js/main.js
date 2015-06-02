@@ -170,8 +170,8 @@ var viewport = {
 		var indicatorString = window.getComputedStyle(bodyElement,':after').content;
 
 		// Firefox keeps quotation marks in string, remove them here.
-		var indicator = indicatorString.replace(/"/g, "");
-
+		var indicator = indicatorString.replace(/"/g, "").replace(/'/g, "");
+ 
 		return indicator;
 
 	},
@@ -182,7 +182,7 @@ var viewport = {
 
 			var indicator = viewport.getIndicator();
 
-			if (indicator == 'small') {
+			if (String(indicator) == "small") {
 
 				return true;
 
@@ -198,7 +198,7 @@ var viewport = {
 
 			var indicator = viewport.getIndicator();
 
-			if (indicator == 'medium') {
+			if (String(indicator) == "medium") {
 
 				return true;
 
@@ -214,8 +214,8 @@ var viewport = {
 
 			var indicator = viewport.getIndicator();
 
-			if (indicator == 'large') {
-				
+			if (String(indicator) === "large") {
+		
 				return true;
 
 			} else {
@@ -314,6 +314,8 @@ var Mast = {
 		Mast.loop = requestAnimationFrame(Mast.fixState);
 		Mast.transparentLoop = requestAnimationFrame(Mast.transparentState);
 		Mast.navPositionLoop = requestAnimationFrame(Mast.navPosition);
+
+		console.log("Mast is being initialized in the object");
 	},
 
 	reset : function() {
@@ -747,6 +749,7 @@ $(document).ready(function() {
 
 	if (viewport.is.medium() || viewport.is.large()) {
 
+		console.log("mast is being initialized");
 		Mast.init();
 
 	}
@@ -754,6 +757,7 @@ $(document).ready(function() {
 	if (thisPage === 'home' || thisPage === 'pacific.home' && viewport.is.large()) {
 
 		Captions.init();
+		console.log("captions are initialized");
 
 	}
 		
