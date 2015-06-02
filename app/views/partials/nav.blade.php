@@ -4,10 +4,8 @@
 
 @if (strpos(Route::currentRouteName(), 'pacific') !== false)
 <a href="{{ route('pacific.home') }}"><img class="logo" id="pacific-logo" src="{{ asset('img/pacific-logo.svg') }}"></a>
-@elseif(Route::currentRouteName() == 'vendors' || Route::currentRouteName() == 'quote')
-<a href="{{ route('home') }}"><img class="logo" src="{{ asset('img/script-logo-white.png') }}"></a>
 @else
-<a href="{{ route('home') }}"><img class="logo" src="{{ asset('img/script-logo.png') }}"></a>
+<a href="{{ route('home') }}"><img class="logo" src="{{ asset('img/smith-logo-circle.png') }}"></a>
 @endif
 
 <div class="navbar"></div>

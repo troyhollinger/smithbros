@@ -70,8 +70,8 @@
 
 					<a href="mailto:info@smithbrosmfg.com">info@smithbrosmfg.com</a><br>
 					
-
-					<a href="http://www.troyhollinger.com"><span class="credits">Website Made by Troy</span></a>
+					<a href="http://www.troyhollinger.com" style="overflow:hidden;display:block;"><span class="credits">Website Made by Troy</span></a>
+					
 
 				</div>
 

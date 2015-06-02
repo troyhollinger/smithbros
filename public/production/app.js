@@ -355,6 +355,8 @@ var Mast = {
 
 	listItems : $(".nav").find('li'),
 
+	listItemsContainer : $(".nav").find('nav'),
+
 	contactListItem : $("#contact-list-item"),
 
 	requestQuoteButton : $(".nav-request-quote"),
@@ -396,10 +398,12 @@ var Mast = {
 		if (distance > ($(window).height() - elementHeight)) {
 			
 			Mast.element.addClass('nav-fixed');
+			Mast.listItemsContainer.addClass('shifted');
 
 		} else {
 
 			Mast.element.removeClass('nav-fixed');
+			Mast.listItemsContainer.removeClass('shifted');
 		}
 
 		Mast.loop = requestAnimationFrame(Mast.fixState);
@@ -475,7 +479,7 @@ var Logo = {
 	fixed : function() {
 
 		var distanceScrolled = $(document).scrollTop();
-		var moveAmount = distanceScrolled + ($(window).height() * 0.01);
+		var moveAmount = distanceScrolled + ($(window).height() * 0.005);
 
 		Logo.element.css('top', moveAmount + 'px');
 
@@ -774,7 +778,6 @@ $(document).ready(function() {
 
 	if (viewport.is.medium() || viewport.is.large()) {
 
-		console.log("mast is being initialized");
 		Mast.init();
 
 	}
@@ -782,14 +785,12 @@ $(document).ready(function() {
 	if (thisPage === 'home' || thisPage === 'pacific.home' && viewport.is.large()) {
 
 		Captions.init();
-		console.log("captions are initialized");
 
 	}
 		
 	if (thisPage === 'capabilities' || thisPage === 'pacific.home') {
 
 		ImageContainers.init();
-		// ImageColumns.init();
 		Parts.init();
 
 	}
