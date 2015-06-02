@@ -943,8 +943,9 @@ nav {
 
 	@include breakpoint(medium) {
 
-		// height:;
 		background-color: $dark;
+		height:50%;
+		height:50vh;
 
 	}
 
