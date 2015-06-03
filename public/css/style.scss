@@ -1920,13 +1920,15 @@ nav {
 
 	.patty {
 
-		background-color: black;
+		background-color: $gray;
 
 	}
 
 	&.open {
 
 		.patty {
+
+			background-color: black;
 
 			&:first-child {
 
