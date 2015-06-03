@@ -1064,6 +1064,12 @@ nav {
 
 	}
 
+	@include breakpoint(small) {
+
+		display: none;
+
+	}
+
 }
 
 .footer {
@@ -1328,8 +1334,10 @@ nav {
 	.container {
 
 		@include box-sizing(border-box);
-		padding-top: 12%;
-		padding-top: 12vh;
+		padding-top: 15%;
+		padding-top: 15vh;
+		padding-bottom:5%;
+		padding-bottom: 5vh;
 
 	}
 
@@ -1384,15 +1392,13 @@ nav {
 .button {
 
 	position: relative;
-	min-width:200px;
+	min-width:100px;
 	width:auto;
 	display: inline-block;
-	// height:50px;
 	height:auto;
 	background-color: white;
 	color:$dark;
 	font-size: .9rem;
-	// line-height: 3.2rem;
 	text-align: center;
 	border: none;
 	text-transform: uppercase;
@@ -1500,7 +1506,7 @@ nav {
 	@include breakpoint(small) {
 
 		width:160px;
-		height:40px;
+		height:60px;
 
 	}
 

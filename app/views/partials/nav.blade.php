@@ -35,14 +35,14 @@
 				@else
 				<a href="{{ route('home') }}"><li {{ Request::is('/') ? 'class="lighter"' : '' }} data-hover="1945 to Now">1945 to Now</li></a>
 				<a href="{{ route('capabilities') }}"><li {{ Request::is('capabilities') ? 'class="lighter"' : '' }} data-hover="Capabilities">Capabilities</li></a>
-				<a href="{{ route('capabilities') }}#machine-list" class="mobile-navigation-item"><li class="nav-capabilities-title {{ Request::is('quote') ? 'lighter' : '' }}">Machine List <div class="hamburger nav-hamburger">
+				<a href="{{ route('capabilities') }}#machine-list" class="mobile-navigation-item"><li class="nav-capabilities-title">Machine List <div class="hamburger nav-hamburger">
 					    <div class="patty"></div>
 					    <div class="patty"></div>
 					    <div class="patty"></div>
 					</div></li></a>
 				<a href="#contact"><li id="contact-list-item" data-hover="Contact">Contact</li></a>
 				<a href="{{ route('pacific.home') }}"><li {{ Request::is('pacific') ? 'class="lighter"' : '' }} data-hover="Pacific Welding">Pacific Welding</li></a>
-				<a href="{{ route('vendors') }}"><li {{ Request::is('vendors') || Request::is('quote') ? 'class="lighter"' : '' }} data-hover="Customers" id="customers-nav-element">Customers</li></a>
+				<a href="{{ route('vendors') }}"><li {{ Request::is('vendors') ? 'class="lighter"' : '' }} data-hover="Customers" id="customers-nav-element">Customers</li></a>
 				<a href="{{ route('quote') }}" class="mobile-navigation-item"><li {{ Request::is('quote') ? 'class="lighter"' : '' }} >Request Quote</li></a>
 
 				@endif
