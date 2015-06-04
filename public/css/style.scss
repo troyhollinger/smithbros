@@ -697,6 +697,12 @@ nav {
 
 	}
 
+	&.fixed {
+
+		position: fixed;
+
+	}
+
 	@include breakpoint(medium) {
 
 		// display: none;

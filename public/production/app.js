@@ -300,34 +300,37 @@ var Photos = {
 
 	init : function() {
 
-		this.parallax();
+		this.improvedParallax();
 
-		Photos.loop = requestAnimationFrame(Photos.parallax);
+		Photos.loop = requestAnimationFrame(Photos.improvedParallax);
 
 	},
 
 	elements : $(".photo"),
 
-	parallax : function() {
+	improvedParallax : function() {
 
 		var distance = $(document).scrollTop();
+		var windowHeight = $(window).height();
+		var speed = 0.05;
 
 		Photos.elements.each(function() {
 
-			var startingDistance = $(this).parent().offset().top;
-			var photoHeight = $(this).height();
-			// var speed = $(this).attr('data-speed') * 10;
-			var speed = 0.05;
-			var moveAmount = (distance - (distance * speed)) - (startingDistance - (startingDistance * 0.038));
-			
-			// $(this).css('transform', 'translate(-50%,' + ((distance - (distance / speed)) - (parentDistance - (distance / (speed * ( (speed / 10) * 0.75 ) )))) + 'px)');
-			// $(this).css('transform', 'translate(-50%,' + (((distance - (distance / speed)) - (parentDistance - (distance / (speed * ( (speed / 10) * 0.75 ) )))) + ((parentDistance / photoHeight) * 25) ) + 'px)');
+			var parentOffset = $(this).parent().offset().top;
 
-			$(this).css('transform', 'translate(-50%,' + moveAmount + 'px)');
+			if (distance > parentOffset - windowHeight && distance < parentOffset + (windowHeight * 2)) {
 
-		});	
+				var startingDistance = parentOffset;
+				var photoHeight = $(this).height();
+				var moveAmount = (distance - (distance * speed)) - (startingDistance - (startingDistance * 0.038));
+				
+				$(this).css('transform', 'translate(-50%,' + moveAmount + 'px)');
 
-		Photos.loop = requestAnimationFrame(Photos.parallax);
+			}
+
+		});
+
+		Photos.loop = requestAnimationFrame(Photos.improvedParallax);
 
 	}
 }
@@ -764,11 +767,14 @@ $(document).ready(function() {
 	if (viewport.is.large()) {
 
 		if (!isSafari && !isExplorer) {
-			Photos.init();
+
+			Photos.init();	
 			Logo.init();
+
 		} else {
 
 			$(".logo").addClass('logo-fixed');
+			// $(".photo").addClass('fixed');
 
 		}
 		
