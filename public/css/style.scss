@@ -1339,8 +1339,8 @@ nav {
 	.container {
 
 		@include box-sizing(border-box);
-		padding-top: 15%;
-		padding-top: 15vh;
+		padding-top: 20%;
+		padding-top: 20vh;
 		padding-bottom:5%;
 		padding-bottom: 5vh;
 
@@ -1409,7 +1409,7 @@ nav {
 	text-transform: uppercase;
 	cursor: pointer;
 	@include box-sizing(border-box);
-	padding:15px 0px;
+	padding:15px 15px;
 	overflow: hidden;
 
 	&.not-ready {
@@ -1503,15 +1503,18 @@ nav {
 
 		width:180px;
 		height:45px;
-		line-height: 3rem;
+		
 		font-size: .8rem;
+		padding:10px;
 
 	}
 
 	@include breakpoint(small) {
 
-		width:160px;
-		height:60px;
+		// width:160px;
+		// height:60px;
+		line-height: 2.5rem;
+		padding:7px;
 
 	}
 
