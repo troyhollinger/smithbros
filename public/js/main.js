@@ -401,8 +401,8 @@ var Mast = {
 			Mast.pageElements.hide();
 			Mast.requestQuoteButton.show();
 
-			//This is here because the image on the vendors page is too dark...sorry. client.
-			if (thisPage === 'vendors') Logo.goDark();
+			// //This is here because the image on the vendors page is too dark...sorry. client.
+			// if (thisPage === 'vendors') Logo.goDark();
 
 		} else {
 
@@ -412,8 +412,8 @@ var Mast = {
 			Mast.requestQuoteButton.hide();
 			Mast.pageElements.show();
 
-			//This is here because the image on the vendors page is too dark...sorry. client.
-			if (thisPage === 'vendors') Logo.goLight();
+			// //This is here because the image on the vendors page is too dark...sorry. client.
+			// if (thisPage === 'vendors') Logo.goLight();
 
 		}
 
