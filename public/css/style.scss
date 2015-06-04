@@ -1885,11 +1885,13 @@ nav {
 
 }
 
+
+
 .hamburger {
 
 	cursor:pointer;
 	position: relative;
-
+	
 	.patty {
 
 		width:100%;
@@ -1917,14 +1919,23 @@ nav {
 
 }
 
-.mobile-hamburger {
+.hamburger-box {
 
 	position: fixed;
 	top:20px;
 	right:20px;
+	box-sizing:border-box;
+	padding:10px 7px;
+	background-color: $dark;
+	z-index: 10;
+
+}
+
+.mobile-hamburger {
+
+	
 	width:30px;
 	height:20px;
-	z-index: 10;
 	cursor: pointer;
 
 	.patty {
@@ -1937,7 +1948,7 @@ nav {
 
 		.patty {
 
-			background-color: black;
+			// background-color: black;
 
 			&:first-child {
 

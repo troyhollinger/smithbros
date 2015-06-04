@@ -10,13 +10,18 @@
 
 <div class="navbar"></div>
 
-<div class="hamburger mobile-hamburger closed" id="mobile-hamburger">
+<div class="hamburger-box">
 
-	<div class="patty"></div>
-	<div class="patty"></div>
-	<div class="patty"></div>
+	<div class="hamburger mobile-hamburger closed" id="mobile-hamburger">
+
+		<div class="patty"></div>
+		<div class="patty"></div>
+		<div class="patty"></div>
+
+	</div>
 
 </div>
+
 
 
 <div class="nav">
