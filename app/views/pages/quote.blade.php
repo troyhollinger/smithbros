@@ -15,7 +15,7 @@ Request A Quote - Smith Brothers Manufacturing
 
 		<div class="vendor-info">
 
-			<p class="bold">MANUFACTURERS OF SCREW MACHINE PRODUCTS AND PACIFIC WELDING ELECTRODES</p>
+			<p class="bold first">MANUFACTURERS OF SCREW MACHINE PRODUCTS AND PACIFIC WELDING ELECTRODES</p>
 
 		</div>
 
