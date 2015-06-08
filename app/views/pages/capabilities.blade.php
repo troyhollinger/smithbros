@@ -114,7 +114,7 @@ Capabilities - Smith Brothers Manufacturing
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image data-img" src="http://placehold.it/1x1" data-sml="http://placehold.it/1x1" data-med="http://placehold.it/1x1" data-lrg="{{ asset('img/parts/parts-14.jpg') }}" data-zoom="2"></img>
 						</div>
-						<div class="parts-image-caption"><p>CONOMATIC 11/16”</p></div>
+						<div class="parts-image-caption"><p>CONOMATIC 9/16”</p></div>
 					</div>
 
 					<div class="parts-image-container long-parts-image-container">
@@ -166,7 +166,7 @@ Capabilities - Smith Brothers Manufacturing
 						<div class="long-parts-image-container parts-image-centerer">
 							<img class="parts-image data-img" src="http://placehold.it/1x1" data-sml="http://placehold.it/1x1" data-med="http://placehold.it/1x1" data-lrg="{{ asset('img/parts/parts-18.jpg') }}" data-zoom="1.2"></img>
 						</div>
-						<div class="parts-image-caption"><p>CONOMATIC 11/16”</p></div>
+						<div class="parts-image-caption"><p>CONOMATIC 9/16”</p></div>
 					</div>
 				</div>
 
