@@ -1929,6 +1929,12 @@ nav {
 	background-color: $dark;
 	z-index: 10;
 
+	@include stretchpoint(medium) {
+
+		display: none;
+
+	}
+
 }
 
 .mobile-hamburger {
