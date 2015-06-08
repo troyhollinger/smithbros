@@ -183,6 +183,26 @@ Capabilities - Smith Brothers Manufacturing
 
 				<div class="machine-module">
 
+					<h2 class="machine-title">CNC Turning Centers</h2>
+
+					<table class="machine-list-table">
+						<tr>
+							<td>1&nbsp;</td>
+							<td>GANESH CNC 70MM-TTMY 8 AXIS-MILL TURN W/ DUAL 
+								16-STATION LIVE TOOL TURRETS, 2-3/4&rdquo; CAPACITY, TWIN 
+								TURRET W/ SUBSPINDLE. 10&rdquo; CHUCKING CAPACITY
+							</td>
+						</tr>
+						<tr>
+							<td>2&nbsp;</td>
+							<td>GANESH CNC CS-32 SWISS STYLE 7 AXIS-MILL TURN, 1-1/4” CAPACITY</td>
+						</tr>
+					</table>
+
+				</div>
+
+				<div class="machine-module">
+
 					<h2 class="machine-title">Automatic Screw</h2>
 
 					<table class="machine-list-table">
@@ -244,17 +264,10 @@ Capabilities - Smith Brothers Manufacturing
 
 				<div class="machine-module">
 
-					<h2 class="machine-title">Lathes</h2>
+					<h2 class="machine-title">Manual Lathes</h2>
 
 					<table class="machine-list-table">
 
-						<tr>
-							<td>1&nbsp;</td>
-							<td>GANESH CNC 70MM-TTMY 8 AXIS-MILL TURN W/ DUAL 
-								16-STATION LIVE TOOL TURRETS, 2-3/4&rdquo; CAPACITY, TWIN 
-								TURRET W/ SUBSPINDLE. 10&rdquo; CHUCKING CAPACITY
-							</td>
-						</tr>
 						<tr>
 							<td>1&nbsp;</td>
 							<td>HARRISON HEAVY DUTY ENGINE LATHE 17x60x3” BORE</td>
@@ -270,10 +283,6 @@ Capabilities - Smith Brothers Manufacturing
 						<tr>
 							<td>2&nbsp;</td>
 							<td>MONARCH TOOLING 1-3/8“ 10-EE TOOLING LATHE</td>
-						</tr>
-						<tr>
-							<td>2&nbsp;</td>
-							<td>GANESH CNC CS-32 SWISS STYLE 7 AXIS-MILL TURN, 1-1/4” CAPACITY</td>
 						</tr>
 
 					</table>
