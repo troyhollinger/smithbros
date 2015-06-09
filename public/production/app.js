@@ -482,7 +482,7 @@ var Logo = {
 	fixed : function() {
 
 		var distanceScrolled = $(document).scrollTop();
-		var moveAmount = distanceScrolled + ($(window).height() * 0.005);
+		var moveAmount = distanceScrolled;
 
 		Logo.element.css('top', moveAmount + 'px');
 
