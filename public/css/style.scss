@@ -215,17 +215,8 @@ html {
 	position: absolute;
 	left:9.5%;
 	z-index: 11;
-	// width:177px;
 	height:15%;
 	height:15vh;
-	// opacity: .7;
-	// @include transform(translate(0, -9%));
-
-	@include breakpoint(large) {
-
-		// width:100px;
-
-	}
 
 	@include breakpoint(tablet) {
 
@@ -240,25 +231,7 @@ html {
 .logo-fixed {
 
 	position: fixed;
-	// left:6.5%;
-	// top:10px;
-
-	// width:177px;
-
-	// @include breakpoint(large) {
-
-	// 	// width:120px;
-
-	// }
-
-	// @include breakpoint(medium) {
-
-	// 	position: fixed;
-	// 	left:5%;
-	// 	top:10px;
-
-	// }
-
+	
 }
 
 #pacific-logo {
