@@ -6,7 +6,7 @@
 
 			<div class="contact-info">
 
-				<p class="bold">MANUFACTURERS OF SCREW MACHINE PRODUCTS<br> AND PACIFIC WELDING ELECTRODES</p>
+				{{-- <p class="bold">MANUFACTURERS OF SCREW MACHINE PRODUCTS<br> AND PACIFIC WELDING ELECTRODES</p> --}}
 
 			</div>
 
