@@ -28,7 +28,7 @@
         <meta name="msapplication-TileColor" content="#2b5797">
         <meta name="msapplication-TileImage" content="{{ asset('img/favicons/mstile-144x144.png') }}">
         <meta name="theme-color" content="#ffffff">
-        <link rel="stylesheet" type="text/css" href="http://cloud.typography.com/7040154/728808/css/fonts.css" />
+        <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7040154/728808/css/fonts.css" />
         <link rel="stylesheet" href="{{ asset('production/app.css') }}"> 
         <script src="{{ asset('js/vendor/modernizr-2.6.2.min.js') }}"></script>
         <script>
