@@ -52,13 +52,25 @@ Route::post('quote', ['as' => 'quote.post', function() {
 
 	$input = Input::all();
 
-	$name = Input::get('name');
+	$name = Input::get('name');	
 
+	if (App::environment('production')) {
+
+		Mail::send('emails.quote', array('form' => $input), function($message) use ($name) {
+
+		    $message->to('info@smithbrosmfg.com', 'Smith Bros')->subject('New Quote Request from ' . $name);
+		    
+		});
+
+	}
+	
 	Mail::send('emails.quote', array('form' => $input), function($message) use ($name) {
 
-	    $message->to('austenpayan@gmail.com', 'John Smith')->subject('New Quote Request from ' . $name);
+	    $message->to('austenpayan@gmail.com', 'Austen Payan')->subject('New Quote Request from ' . $name);
 	    
 	});
+
+
 
 
 }]);
