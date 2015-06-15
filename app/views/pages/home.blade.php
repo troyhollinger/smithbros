@@ -62,7 +62,7 @@
 <div class="photo-container">
 
 	<div class="photo-caption photo-caption-fixed photo-caption-mobile">
-		<h2 class="photo-caption-title">Probably the oldest machine shop in San Diego, certaintly the most qualified.</h2>
+		<h2 class="photo-caption-title">Probably the oldest machine shop in San Diego, certainly the most qualified.</h2>
 		<p class="photo-caption-description">Glen and Ameda Smith started manufacturing out of a garage then they moved to the present facility as seen in this picture from 1947.</p>
 	</div>
 
