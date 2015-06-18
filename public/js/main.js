@@ -289,21 +289,21 @@ var Photos = {
 		var windowHeight = $(window).height();
 		var speed = 0.05;
 
-		Photos.elements.each(function() {
+		for (var i = 0; i < Photos.elements.length; i++) {
 
-			var parentOffset = $(this).parent().offset().top;
+			var parentOffset = Photos.elements.eq(i).parent().offset().top;
 
 			if (distance > parentOffset - windowHeight && distance < parentOffset + (windowHeight * 2)) {
 
 				var startingDistance = parentOffset;
-				var photoHeight = $(this).height();
+				var photoHeight = Photos.elements.eq(i).height();
 				var moveAmount = (distance - (distance * speed)) - (startingDistance - (startingDistance * 0.038));
 				
-				$(this).css('transform', 'translate(-50%,' + moveAmount + 'px)');
+				Photos.elements.eq(i).css('transform', 'translate(-50%,' + moveAmount + 'px)');
 
 			}
 
-		});
+		}
 
 		Photos.loop = requestAnimationFrame(Photos.improvedParallax);
 
@@ -749,7 +749,7 @@ $(document).ready(function() {
 		} else {
 
 			$(".logo").addClass('logo-fixed');
-			// $(".photo").addClass('fixed');
+			$(".photo").addClass('fixed');
 
 		}
 		

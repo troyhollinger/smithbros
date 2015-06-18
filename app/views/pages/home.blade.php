@@ -3,7 +3,7 @@
 
 
 @section('title')
-1945 to Now
+Smith Brothers Manufacturing Corporation 
 @stop
 
 @section('content')
