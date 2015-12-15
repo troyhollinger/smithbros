@@ -205,13 +205,9 @@ html {
 
 	}
 
-
 }
 
-
-
 .logo {
-
 	position: absolute;
 	left:9.5%;
 	z-index: 11;
@@ -648,10 +644,10 @@ nav {
 
 .photo {
 
-	width:110%;
-	height:110%;
-	background-size: cover;
-	background-position: top;	
+	width:100%;
+	height:100%;
+	// background-size: cover;
+	// background-position: top;	
 	@include centerHorizontal;
 
 	&.first-photo {

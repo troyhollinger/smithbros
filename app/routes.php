@@ -70,7 +70,4 @@ Route::post('quote', ['as' => 'quote.post', function() {
 	    
 	});
 
-
-
-
 }]);
